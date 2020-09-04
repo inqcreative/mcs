@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Store Locator</title>
+    <meta name='robots' content='noindex, nofollow'>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/interactivemap.css">
+    <style>
+        body {
+            color: #404040;
+            font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /** {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }*/
+
+    </style>
+</head>
+
+<body>
+    <div class="container" style="max-width: 1200px; height: 600px; position: relative">
+        <div class='sidebarlisting'>
+            <div class='heading'>
+                <h1>Our Locations</h1>
+            </div>
+            <div id='listings' class='listings'></div>
+        </div>
+        <div style="text-align: center">
+            <div id='map' class='map'></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+        // This will let you use the .remove() function later on
+        if (!('remove' in Element.prototype)) {
+            Element.prototype.remove = function() {
+                if (this.parentNode) {
+                    this.parentNode.removeChild(this);
+                }
+            };
+        }
+
+        mapboxgl.accessToken = 'pk.eyJ1Ijoiam9ub2RqbGVlIiwiYSI6ImNqejBrdWV6YjAwMjgzbnAwc3NvdDhoZHAifQ.naL_6lnZjH31Wwc31n4SgA';
+        /** 
+         * Add the map to the page
+         */
+
+        var bounds = [
+            [144.130, -38.5340], // Southwest coordinates
+            [145.490, -37.5930] // Northeast coordinates
+        ];
+
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/light-v10',
+            center: [144.955438, -37.800563],
+            zoom: 12,
+            scrollZoom: true,
+            maxBounds: bounds // Sets bounds as max
+        });
+
+        map.addControl(new mapboxgl.NavigationControl());
+
+        var stores = {
+            "type": "FeatureCollection",
+            "features": [{
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            144.955438,
+                            -37.800563
+                        ]
+                    },
+                    "properties": {
+                        "site": "North Melbourne",
+                        "address": "Suite 3 / Level 1, 33 Flemington Rd",
+                        "suburb": "North Melbourne",
+                        "country": "Australia",
+                        "postcode": "3051",
+                        "state": "VIC",
+                        "page": "nmelb"
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            144.922937,
+                            -37.772312
+                        ]
+                    },
+                    "properties": {
+                        "site": "Moonee Ponds",
+                        "address": "54 Maribyrnong Rd",
+                        "suburb": "Moonee Ponds",
+                        "country": "Australia",
+                        "postcode": "3039",
+                        "state": "VIC",
+                        "page": "mponds"
+                    }
+                },
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
+                            144.993063,
+                            -37.817688
+                        ]
+                    },
+                    "properties": {
+                        "site": "Epworth",
+                        "address": "Suite 6.4, Level 6, 89 Bridge Rd",
+                        "suburb": "Richmond",
+                        "country": "Australia",
+                        "postcode": "3121",
+                        "state": "VIC",
+                        "page": "epworth"
+                    }
+                },
+            ]
+        };
+
+        /**
+         * Assign a unique id to each store. You'll use this `id`
+         * later to associate each point on the map with a listing
+         * in the sidebar.
+         */
+        stores.features.forEach(function(store, i) {
+            store.properties.id = i;
+        });
+
+        /**
+         * Wait until the map loads to make changes to the map.
+         */
+        map.on('load', function(e) {
+            /** 
+             * This is where your '.addLayer()' used to be, instead
+             * add only the source without styling a layer
+             */
+            map.addSource("places", {
+                "type": "geojson",
+                "data": stores
+            });
+
+            /**
+             * Add all the things to the page:
+             * - The location listings on the side of the page
+             * - The markers onto the map
+             */
+            buildLocationList(stores);
+            addMarkers();
+        });
+
+        /**
+         * Add a marker to the map for every store listing.
+         **/
+        function addMarkers() {
+            /* For each feature in the GeoJSON object above: */
+            stores.features.forEach(function(marker) {
+                /* Create a div element for the marker. */
+                var el = document.createElement('div');
+                /* Assign a unique `id` to the marker. */
+                el.id = "marker-" + marker.properties.id;
+                /* Assign the `marker` class to each marker for styling. */
+                el.className = 'marker';
+
+                /**
+                 * Create a marker using the div element
+                 * defined above and add it to the map.
+                 **/
+                new mapboxgl.Marker(el, {
+                        offset: [0, -23]
+                    })
+                    .setLngLat(marker.geometry.coordinates)
+                    .addTo(map);
+
+                /**
+                 * Listen to the element and when it is clicked, do three things:
+                 * 1. Fly to the point
+                 * 2. Close all other popups and display popup for clicked store
+                 * 3. Highlight listing in sidebar (and remove highlight for all other listings)
+                 **/
+                el.addEventListener('click', function(e) {
+                    /* Fly to the point */
+                    flyToStore(marker);
+                    /* Close all other popups and display popup for clicked store */
+                    createPopUp(marker);
+                    /* Highlight listing in sidebar */
+                    var activeItem = document.getElementsByClassName('active');
+                    e.stopPropagation();
+                    if (activeItem[0]) {
+                        activeItem[0].classList.remove('active');
+                    }
+                    var listing = document.getElementById('listing-' + marker.properties.id);
+                    listing.classList.add('active');
+                });
+            });
+        }
+
+        /**
+         * Add a listing for each store to the sidebar.
+         **/
+        function buildLocationList(data) {
+            data.features.forEach(function(store, i) {
+                /**
+                 * Create a shortcut for `store.properties`,
+                 * which will be used several times below.
+                 **/
+                var prop = store.properties;
+
+                /* Add a new listing section to the sidebar. */
+                var listings = document.getElementById('listings');
+                var listing = listings.appendChild(document.createElement('div'));
+                /* Assign a unique `id` to the listing. */
+                listing.id = "listing-" + prop.id;
+                /* Assign the `item` class to each listing for styling. */
+                listing.className = 'item';
+
+                /* Add the link to the individual listing created above. */
+                var link = listing.appendChild(document.createElement('a'));
+                link.href = '#' + prop.site;
+                link.className = 'title';
+                link.id = "link-" + prop.id;
+                link.innerHTML = prop.site;
+
+                /* Add details to the individual listing. */
+                var details = listing.appendChild(document.createElement('div'));
+                details.innerHTML = prop.address + ', ' + prop.suburb + ' ' + prop.postcode;
+                /*if (prop.phone) {
+                    details.innerHTML += ' · ' + prop.phoneFormatted;
+                }*/
+
+                /**
+                 * Listen to the element and when it is clicked, do four things:
+                 * 1. Update the `currentFeature` to the store associated with the clicked link
+                 * 2. Fly to the point
+                 * 3. Close all other popups and display popup for clicked store
+                 * 4. Highlight listing in sidebar (and remove highlight for all other listings)
+                 **/
+                link.addEventListener('click', function(e) {
+                    for (var i = 0; i < data.features.length; i++) {
+                        if (this.id === "link-" + data.features[i].properties.id) {
+                            var clickedListing = data.features[i];
+                            flyToStore(clickedListing);
+                            createPopUp(clickedListing);
+                        }
+                    }
+                    var activeItem = document.getElementsByClassName('active');
+                    if (activeItem[0]) {
+                        activeItem[0].classList.remove('active');
+                    }
+                    this.parentNode.classList.add('active');
+                });
+            });
+        }
+
+        /**
+         * Use Mapbox GL JS's `flyTo` to move the camera smoothly
+         * a given center point.
+         **/
+        function flyToStore(currentFeature) {
+            map.flyTo({
+                center: currentFeature.geometry.coordinates,
+                zoom: 16
+            });
+        }
+
+        /**
+         * Create a Mapbox GL JS `Popup`.
+         **/
+        function createPopUp(currentFeature) {
+
+            $(document).ready(function() {
+                $(".linky").attr("href", "https://melbournecardiology.services/locations/" + currentFeature.properties.page);
+            });
+
+            var popUps = document.getElementsByClassName('mapboxgl-popup');
+            if (popUps[0]) popUps[0].remove();
+            var popup = new mapboxgl.Popup({
+                    closeOnClick: true
+                })
+                .setLngLat(currentFeature.geometry.coordinates)
+                .setHTML('<h5>' + currentFeature.properties.site + '</h5>' +
+                    '<p>' + currentFeature.properties.address + '</p>' + '<a class="linky" href="https://melbournecardiology.services">' + '&rarr;' + '</a>')
+                .addTo(map);
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="bootstrap-4.1.2/dist/css/bootstrap.min.css">-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <!--<link rel="stylesheet" href="fonts/fontawesome-free-5.1.1-web/css/all.css">-->
+        <link rel="stylesheet" href="assets/js/normalize.css" type="text/css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+        <script type="text/javascript" src="assets/js/modernizr.custom.min.js"></script>
+        <script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="assets/js/ScrollMagic.js"></script>
+        <script type="text/javascript" src="assets/js/animation.gsap.js"></script>
+        <link rel="stylesheet" href="assets/css/mcs.css">
+        <style>
+            .navbar {
+                background-color: lightgrey !important;
+                margin: 1rem;
+                border-radius: 50px
+            }
+            .navbar.opaque {
+                -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.5);
+                box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.5);
+                transition: box-shadow 1s ease;
+            }
+            @media screen and (max-width: 1100px) {
+    .navbar {
+        border-radius: 35px
+    }
+    div#nav {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 1100px) {
+    div#navMobile {
+        display: none !important;
+        text-align: center;
+    }
+}
+            .navbar-toggler {
+    color: purple !important;
+}
+.navbar-toggler {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.sticky-top {
+    padding-left: 0; /* ensures nav items are actually centre-aligned */
+    position: sticky;
+    top: 67px;
+    /*justify-content: center !important; /* centre-aligns the nav items, superceded by d-flex justify-content-center in html */
+    background-image: 
+        linear-gradient(
+            90deg,
+            /*rgb(74, 46, 255), 
+            rgb(156, 255, 196)*/
+            #ff0000,
+            #5f009b
+        );
+}
+.btn-light {
+    background: none !important;
+    border: none !important;
+}
+.btn-light:hover {
+    /*background: black !important;*/
+    text-decoration: none;
+    background-image: 
+        linear-gradient(
+            90deg,
+            /*rgb(74, 46, 255), 
+            rgb(156, 255, 196)*/
+            #ff0000,
+            #5f009b
+        ) !important;
+    border-radius: 50px
+}
+.btn-black:hover {
+    background: black !important;
+}
+.navlink {
+    color: black;
+}
+.navlink:hover {
+    color: white;
+}
+.active {
+    color: white !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.phone, .phone1 {
+    color: white;
+}
+.phone1:hover {
+    color: grey;
+}
+.phone1:visited, .phone1:active {
+    text-decoration: none;
+}
+            /* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100000;
+  width: 100%;
+}
+
+/* The progress container */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: transparent;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  /*background: linear-gradient(
+    to right,
+    aquamarine,
+    violet
+  );*/
+    background: red;
+  width: 0%;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+@-webkit-keyframes hvr-wobble-horizontal {
+ 5.56% {
+  -webkit-transform:translateX(8px);
+  transform:translateX(8px)
+ }
+ 11.11% {
+  -webkit-transform:translateX(-6px);
+  transform:translateX(-6px)
+ }
+ 16.67% {
+  -webkit-transform:translateX(4px);
+  transform:translateX(4px)
+ }
+ 22.22% {
+  -webkit-transform:translateX(-2px);
+  transform:translateX(-2px)
+ }
+ 27.75% {
+  -webkit-transform:translateX(1px);
+  transform:translateX(1px)
+ }
+ 33.33% {
+  -webkit-transform:translateX(0);
+  transform:translateX(0)
+ }
+ 100% {
+  -webkit-transform:translateX(0);
+  transform:translateX(0)
+ }
+}
+@keyframes hvr-wobble-horizontal {
+ 5.56% {
+  -webkit-transform:translateX(8px);
+  transform:translateX(8px)
+ }
+ 11.11% {
+  -webkit-transform:translateX(-6px);
+  transform:translateX(-6px)
+ }
+ 16.67% {
+  -webkit-transform:translateX(4px);
+  transform:translateX(4px)
+ }
+ 22.22% {
+  -webkit-transform:translateX(-2px);
+  transform:translateX(-2px)
+ }
+ 27.75% {
+  -webkit-transform:translateX(1px);
+  transform:translateX(1px)
+ }
+ 33.33% {
+  -webkit-transform:translateX(0);
+  transform:translateX(0)
+ }
+ 100% {
+  -webkit-transform:translateX(0);
+  transform:translateX(0)
+ }
+}
+.hvr-wobble-horizontal {
+ display:inline-block;
+ vertical-align:middle;
+ -webkit-transform:perspective(1px) translateZ(0);
+ transform:perspective(1px) translateZ(0);
+ box-shadow:0 0 1px transparent;
+ -webkit-animation-name:hvr-wobble-horizontal;
+ animation-name:hvr-wobble-horizontal;
+ -webkit-animation-duration:3s;
+ animation-duration:3s;
+ -webkit-animation-timing-function:ease-in-out;
+ animation-timing-function:ease-in-out;
+ -webkit-animation-iteration-count:infinite;
+ animation-iteration-count:infinite;
+    border-radius: 50px
+}
+@-webkit-keyframes hvr-wobble-vertical {
+ 5.56% {
+  -webkit-transform:translateY(8px);
+  transform:translateY(8px)
+ }
+ 11.11% {
+  -webkit-transform:translateY(-6px);
+  transform:translateY(-6px)
+ }
+ 16.67% {
+  -webkit-transform:translateY(4px);
+  transform:translateY(4px)
+ }
+ 22.22% {
+  -webkit-transform:translateY(-2px);
+  transform:translateY(-2px)
+ }
+ 27.75% {
+  -webkit-transform:translateY(1px);
+  transform:translateY(1px)
+ }
+ 33.33% {
+  -webkit-transform:translateY(0);
+  transform:translateY(0)
+ }
+ 100% {
+  -webkit-transform:translateY(0);
+  transform:translateY(0)
+ }
+}
+@keyframes hvr-wobble-vertical {
+ 5.56% {
+  -webkit-transform:translateY(8px);
+  transform:translateY(8px)
+ }
+ 11.11% {
+  -webkit-transform:translateY(-6px);
+  transform:translateY(-6px)
+ }
+ 16.67% {
+  -webkit-transform:translateY(4px);
+  transform:translateY(4px)
+ }
+ 22.22% {
+  -webkit-transform:translateY(-2px);
+  transform:translateY(-2px)
+ }
+ 27.75% {
+  -webkit-transform:translateY(1px);
+  transform:translateY(1px)
+ }
+ 33.33% {
+  -webkit-transform:translateY(0);
+  transform:translateY(0)
+ }
+ 100% {
+  -webkit-transform:translateY(0);
+  transform:translateY(0)
+ }
+}
+.hvr-wobble-vertical {
+     display:inline-block;
+     vertical-align:middle;
+     -webkit-transform:perspective(1px) translateZ(0);
+     transform:perspective(1px) translateZ(0);
+     box-shadow:0 0 1px transparent;
+     -webkit-animation-name:hvr-wobble-vertical;
+     animation-name:hvr-wobble-vertical;
+     -webkit-animation-duration:3s;
+     animation-duration:3s;
+     -webkit-animation-timing-function:ease-in-out;
+     animation-timing-function:ease-in-out;
+     -webkit-animation-iteration-count:infinite;
+     animation-iteration-count:infinite;
+}
+/*
+li:hover,
+li:focus {
+   background-image: 
+        linear-gradient(
+            90deg,
+            #ff0000,
+            #5f009b
+        ) !important;
+    border-radius: 10px;
+    padding: -20px;
+    cursor: pointer;
+}
+*/
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li div {
+    visibility: hidden;
+  opacity: 0;
+    position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+    left: 0;
+  display: none;
+}
+
+ul li:hover > div,
+ul li:focus-within > div,
+ul li div:hover,
+ul li div:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
+
+ul li div a {
+    clear: both;
+  width: 100%;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+    background-color: dimgray;
+    display: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.dropdown-menu>a {
+    color: white !important;
+}
+.dropdown-item:hover {
+    color: white;
+    background-image: 
+        linear-gradient(
+            90deg,
+            /*rgb(74, 46, 255), 
+            rgb(156, 255, 196)*/
+            #ff0000,
+            #5f009b
+        );
+}
+/*.active {
+    background-image: linear-gradient(to right, #ff0000,
+            #5f009b) !important;
+}*/
+/*#scrollspy {
+    height: 200px;
+    overflow-y: scroll;
+}*/
+    .tabs{
+  margin-top:50px;
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#fff;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:sticky;
+        top: 200px;
+        z-index: 10;
+}
+
+.tabs a{
+  text-decoration:none;
+  color: #777;
+  text-transform:uppercase;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+}
+
+.tabs a.active{
+  color:#fff;
+}
+
+.tabs a i{
+  margin-right:5px;
+}
+
+.tabs .selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  background: #05abe0;
+  background: -moz-linear-gradient(45deg, #ff0000 0%, #5f009b 100%);
+  background: -webkit-linear-gradient(45deg, #ff0000 0%,#5f009b 100%);
+  background: linear-gradient(45deg, #ff0000 0%,#5f009b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#5f009b',GradientType=1 );
+}
+        </style>
+        <title>Test | MCS</title> 
+    </head>
+    <body onmousedown='return false;' onselectstart='return false;' style="height: 2000px">
+        <div class="header">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div> 
+        </div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbar-transparent flex-md-row" color-on-scroll="10">
+            <a class="navbar-brand" href="/" data-toggle="tooltip" data-placement="bottom" data-html="true" data-animation="true" data-delay='{"show":"50", "hide":"500"}' title="<b>Home</b>" aria-label="Home">
+                <img src="mcsassets/images/U-trans.png" height="40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text" id="nav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2 active" href="/">Home</a>     
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="about">About</a>     
+                    </li>
+                    <li class="nav-item-q dropdown">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" data-toggle="dropdown" href="services" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu justify-content-center text-center">
+                            <a class="dropdown-item" href="services/echo">Echocardiogram</a>
+                            <a class="dropdown-item" href="services/stressecho">Stress Echocardiogram</a>
+                            <a class="dropdown-item" href="services/holter">Holter Monitor</a>
+                            <a class="dropdown-item" href="services/cct">Cardiac CT</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="services/referral">Download Referral Form</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" data-toggle="dropdown" href="locations" role="button" aria-haspopup="true" aria-expanded="false">Locations</a>
+                        <div class="dropdown-menu justify-content-center text-center">
+                            <a class="dropdown-item" href="locations/epworth">Richmond</a>
+                            <a class="dropdown-item" href="locations/mponds">Moonee Ponds</a>
+                            <a class="dropdown-item" href="locations/nmelb">North Melbourne</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="contact">Contact</a>
+                    </li>
+                </ul>
+                <span class="phone">
+                    Call Us: 
+                    <a href="tel:1800880770" class="mr-2 btn phone1">1800 880 770</a>
+                </span> 
+                <a class="btn btn-outline-danger my-2 my-sm-0 hvr-wobble-horizontal" href="book">Request An Appointment</a>
+            </div>
+            <div class="collapse navbar-collapse text justify-content-end nav-justified" id="navMobile">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="/">Home</a>     
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="about">About</a>     
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="locations">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="contact">Contact</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-warning btn-block my-2 my-sm-0 ml-auto hvr-wobble-horizontal" href="book">Request An Appointment</a>
+            </div>
+        </nav>
+                <div class="scrollContent">
+        <div id="mcshome" style="border: solid 1px red">
+            
+                <div class="tabs" style="border: solid 1px green">
+    <div class="selector"></div>
+    <a href="#" class="active"><i class="fab fa-superpowers"></i>Avengers</a>
+    <a href="#"><i class="fas fa-hand-rock"></i>Hulk</a>
+    <a href="#"><i class="fas fa-bolt"></i>Thor</a>
+    <a href="#"><i class="fas fa-burn"></i>Marvel</a>
+  </div>
+            
+            
+            <div class="hometitle">
+                <!--<img src="images/U-trans.png" width="600px">-->
+                <span class="text">Melbourne Cardiology Services</span>
+                <br>
+                <br>
+                <!--<h4 class="text2">Website Under Construction</h4>
+                <br>-->
+                <h5 class="text1">Excellence. Integrity. Quality.</h5>
+                <div id="button1"> 
+                    <a class="mybtn link text3" href="book"><span>Request an Appointment</span></a>
+                    <!--<a class="mybtn1 mybtn1--gradient link text3" href="book"><span>Book an Appointment</span></a>-->
+                </div>
+                <br>
+                <!--<span class="text1" style="font-size: 30pt"><a href='tel:1800880770' class="link">1800 880 770</a></span>-->
+            </div>
+            <!--<div id="homefooter">
+                <div id="homefootercontent">
+                    <p class="text">&copy; 2018 Melbourne Cardiology Services. All rights reserved. Website by INQ Creative.</p>
+                </div>
+            </div>-->
+        </div>
+                </div>
+        
+        <!--<div class="homepagediv">
+        </div>-->
+        <!--<i class="fas fa-user"></i> <!-- uses solid style -->
+        <!--<i class="far fa-user"></i> <!-- uses regular style -->
+        <!--brand icon-->
+        <!--<i class="fab fa-github-square"></i> <!-- uses brands style -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script>
+            $(window).scroll(function() {
+                if($(this).scrollTop() > 10) { /*height in pixels when the navbar becomes non opaque*/ 
+                    $('.navbar-transparent').addClass('opaque');
+                } 
+                else {
+                    $('.navbar-transparent').delay(1000).removeClass('opaque');
+                }
+            });
+            
+            var tabs = $('.tabs');
+var selector = $('.tabs').find('a').length;
+//var selector = $(".tabs").find(".selector");
+var activeItem = tabs.find('.active');
+var activeWidth = activeItem.innerWidth();
+$(".selector").css({
+  "left": activeItem.position.left + "px", 
+  "width": activeWidth + "px"
+});
+
+$(".tabs").on("click","a",function(e){
+  e.preventDefault();
+  $('.tabs a').removeClass("active");
+  $(this).addClass('active');
+  var activeWidth = $(this).innerWidth();
+  var itemPos = $(this).position();
+  $(".selector").css({
+    "left":itemPos.left + "px", 
+    "width": activeWidth + "px"
+  });
+});
+            
+            /*function {
+                if (document.getElementById("myBar").style.width = '100%') {
+                    
+                }
+            }
+            */
+            
+            // When the user scrolls the page, execute myFunction 
+                            window.onscroll = function() {myFunction()};
+
+                            function myFunction() {
+                                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                                var scrolled = (winScroll / height) * 100;
+                                document.getElementById("myBar").style.width = scrolled + "%";
+                            }	
+        </script>
+    </body>
+</html>

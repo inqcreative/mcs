@@ -1,0 +1,268 @@
+/**Styles for the Homepage Only**/
+
+body {
+    background: var(--color-bg);
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 50pt */
+@media screen and (min-width: 601px) {
+    div.hometitle {
+        font-size: 50pt;
+    }
+}
+@media screen and (min-height: 1201px) {
+
+    div#footer {
+        top: 1440px;
+    }
+}
+/* If the screen size is 800px high or less, set the top margin of <div> to 20%, to suit laptops */
+@media screen and (max-height: 800px) {
+    div.hometitle {
+        top: 20%;
+    }
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30pt */
+@media screen and (max-width: 600px) {
+    #herobg {
+        height: auto
+    }
+    div.hometitle {
+        font-size: 30pt;
+        width: 300px;
+        margin: 0 0 0 -150px;
+        left: 50%;
+    }
+    a.mybtn {
+        font-size: 10pt;
+        width: 250px;
+        height: 40px;
+        margin: 75px 0 0 -125px;
+        left: 50%;
+    }
+    div#footer {
+        top: 1030px;
+    }
+    div#footercontent {
+        font-size: 8pt;
+    }
+}
+#mcshome {
+    width: 100%;
+    height: 100vh;
+    background-image:
+        linear-gradient(
+            135deg,
+            /*rgb(74, 46, 255),
+            rgb(156, 255, 196)
+            #88d3ce,
+            #6e45e2*/
+            #fff
+        );
+        /*background: url('../img/test.svg');
+background-size: 200px 300px;*/
+    text-align: center;
+}
+.hometitle {
+    /*background-color: red;*/
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    align-content: center;
+    margin: 0 0 0 -250px;
+    top: 25%;
+    left: 50%;
+    display: block;
+    font-family: "Montserrat Regular", "Gotham", "Avenir Light", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30pt;
+}
+.text {
+    font-family: "vicmedium", "Montserrat Regular", "Gotham", "Avenir Light", "Helvetica Neue", sans-serif;
+}
+.text1 {
+    font-family: "medelregular", "toriga", "Gotham", "Avenir Light", "Helvetica Neue", sans-serif;
+}
+.text2 {
+    font-family: "Lulo Clean One Bold", "Gotham", "Avenir Light", "Helvetica Neue", sans-serif;
+}
+.text3 {
+    font-family: "vicregular", "Gotham", "Avenir Light", "Helvetica Neue", sans-serif;
+    font-weight: normal;
+}
+.text11 {
+    font-size: 11pt;
+}
+.text12 {
+    font-size: 12pt;
+}
+.textb {
+    font-family: "vicbold", "montserratbold", sans-serif;
+    font-weight: bold;
+}
+.textsb {
+    font-family: "vicsemibold", sans-serif;
+}
+.textp {
+    font-size: 1em;
+}
+.textp1 {
+    font-size: 0.8em;
+}
+.textc {
+    color: var(--color-contrast-higher);
+}
+
+/*#button1 {
+    width: 400px;
+    height: 50px;
+    border-radius: 40px;
+    border: 3px solid white;
+    background-color: white;
+    font-family: "Avenir", "VIC Medium", "Brandon", "Gotham", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: block;
+    font-size: 16pt;
+    margin: auto;
+    margin-top: 250px;
+}
+#button1:hover {
+    background-color: yellow;
+    border: yellow;
+}*/
+/*#button1 {
+    width: 350px;
+    height: 35px;
+    border-radius: 40px;
+    border: 3px solid white;
+    background-color: white;
+    font-family: "Montserrat Regular", "Gotham", sans-serif;
+    text-align: center;
+    font-size: 15pt;
+    position: relative;
+    left: 50%;
+    margin: 125px 0 0 -175px;
+}
+#button1:hover {
+    background-color: yellow;
+    border-color: yellow;
+}*/
+.mybtn {
+	/*background-image: linear-gradient(to right, #ff0000 0%, #5f009b 100%);*/
+    background-color: #08AEEA;
+    background-image: linear-gradient(90deg, #08AEEA 0%, #2AF598 100%);
+	border-radius: 40px;
+    box-sizing: border-box;
+	color: #FF325E !important;
+	display: block;
+	font: 1.125rem "vicmedium", "Gotham", "Avenir Light", "Helvetica Neue", sans-serif; /*18*/
+	height: 50px;
+	letter-spacing: 1px;
+	margin: 0 auto;
+    margin-top: 5em;
+	padding: 4px;
+	position: relative;
+    text-decoration: none;
+	text-transform: uppercase;
+	width: 330px;
+	z-index: 2;
+}
+.mybtn:hover {
+	color: #fff !important;
+}
+.mybtn span {
+	align-items: center;
+	/*background: #e7e8e9;*/
+    background: var(--color-bg);
+	border-radius: 40px;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	transition: background .5s ease;
+	width: 100%;
+}
+.mybtn:hover span {
+	background: transparent;
+}
+.mybtn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font: 1.125rem "VIC SemiBold", "Gotham", "Avenir Light", "Helvetica Neue", sans-serif; /*18*/
+    height: 50px;
+    width: 264px;
+    position: relative;
+    z-index: 1;
+    padding: 4px;
+    transition: all 0.3s ease-in;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+.mybtn1 span {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    z-index: 2;
+}
+.mybtn1:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    background: #ededed;
+    transition: all 0.3s ease-in-out;
+}
+.mybtn1--gradient:after {
+    background: linear-gradient(45deg, #EE60A2, #F79459);
+}
+.mybtn1:hover {
+    text-decoration: none;
+}
+.mybtn1:hover:after {
+    height: 100%;
+}
+.link {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: black;
+}
+#homefooter {
+    /*background-color: red;
+    opacity: 0.2;*/
+    width: 100%;
+    height: 60px;
+    position:absolute;
+    display: block;
+    top: 1140px;
+    bottom: 0;
+    padding: 0;
+    z-index: 1;
+}
+#homefootercontent {
+    font-family: "Montserrat Regular", "Gotham", "Avenir", sans-serif;
+    color: white;
+    font-size: 10pt;
+    padding: 0 20px 0 20px;
+}
+.homepagediv {
+    height: 500px;
+    background-color: beige;
+}

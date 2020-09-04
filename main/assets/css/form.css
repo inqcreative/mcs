@@ -1,0 +1,455 @@
+.form .inputWrapper input[type=email],
+.form .inputWrapper input[type=text],
+.form .inputWrapper input[type=number],
+.form .inputWrapper input[type=date],
+.form .inputWrapper textarea {
+    border: none;
+    border-bottom: 1px solid var(--color-contrast-higher);
+    border-radius: 0;
+    background: var(--color-bg);
+    padding: 16px 8px;
+    height: auto;
+    min-width: 100%;
+    font-size: 16px;
+    line-height: 16px
+}
+
+.form .inputWrapper input[type=email]:focus,
+.form .inputWrapper input[type=text]:focus,
+.form .inputWrapper input[type=number]:focus,
+.form .inputWrapper input[type=date]:focus,
+.form .inputWrapper textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--color-primary-dark)
+}
+
+
+.fieldcontainer:first-child {
+    padding-left: 0
+}
+
+.fieldcontainer label {
+    position: relative;
+    margin-bottom: 0;
+    top: 36px;
+    left: 12px;
+    transform: scale(1) translateX(0) translateY(0);
+    transform-origin: 15%;
+    transition: transform .2s ease;
+    z-index: 2;
+    font-size: 16px;
+    color: var(--color-contrast-higher);
+    pointer-events: none
+}
+
+.fieldcontainer label.focused {
+    transform: scale(.8) translateX(-16px) translateY(-32px);
+    color: var(--color-primary-dark)
+}
+
+.fieldcontainer label.postField {
+    top: 0;
+    left: 12px
+}
+
+.form-assembly-form__container .form {
+    padding: 0
+}
+
+.form-assembly-form__container .formcontainer {
+    max-width: none
+}
+
+.form .fieldcontainer {
+    width: 100%
+}
+
+.form .section.inline.group .fieldcontainer {
+    width: 50%
+}
+
+.form .section {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.reqstar:after {
+    content: " *";
+    color: #F00;
+    font-size: 90%;
+}
+
+
+
+
+
+.modal__content {
+    /*border: 2px solid #e7e7e7;*/
+    width: 100%;
+    padding: 2em 0 2em;
+    text-align: left;
+}
+
+.input-wrapper {
+    position: relative;
+    margin: 1em 0 0;
+}
+
+.form .twingroup {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.input-wrapper.twin {
+    width: 50%;
+}
+
+.input-wrapper:hover .form__label,
+.input-wrapper:focus .form__label {
+    top: -0.8em;
+    color: #545353;
+}
+
+.input-wrapper.has-content .form__label {
+    top: -0.8em;
+}
+
+.input-wrapper.has-content .form__close {
+    display: block;
+    fill: #ADA8B6;
+}
+
+.form__close {
+    display: none;
+    padding: 0.5em;
+    position: absolute;
+    top: 0.5em;
+    right: 0.25em;
+    height: 35px;
+    width: 35px;
+    fill: #ADA8B6;
+    -webkit-transition: fill 0.25s ease;
+    transition: fill 0.25s ease;
+    cursor: pointer;
+}
+
+.form__close:hover,
+.form__close:focus {
+    fill: #A1E6CC;
+}
+
+.input-wrapper--password {
+    width: 60%;
+}
+
+.form__valid {
+    display: block;
+}
+
+.form__input {
+    border: 0;
+    width: 100%;
+    color: var(--color-contrast-higher);
+    background: var(--color-bg);
+    border-bottom: 2px solid #e7e7e7;
+    padding: 1em 0.25em 0.5em;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.twin:last-child {
+    padding-left: 10px;
+}
+
+.form__input:focus,
+.form__input:hover,
+.form__input:active {
+    outline: 0;
+    border-color: #545353;
+}
+
+.form__input:focus + .form__label,
+.form__input:hover + .form__label,
+.form__input:active + .form__label {
+    top: -0.8em;
+    color: #545353;
+}
+
+.form__label {
+    position: absolute;
+    top: 1em;
+    left: 0.25em;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ADA8B6;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.twin:last-child label {
+    padding-left: 10px;
+}
+
+.parsley-error {
+    border-color: #ED6A5A;
+}
+
+.input--success .form__label {
+    color: #A1E6CC;
+}
+
+.input--success .form__valid {
+    display: block;
+}
+
+.parsley-errors-list {
+    padding: 0 10px;
+    color: #ED6A5A;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.form__valid {
+    position: absolute;
+    left: 110%;
+    top: 0.25em;
+    display: none;
+    height: 16px;
+    width: 16px;
+    fill: #A1E6CC;
+}
+
+.button-wrapper {
+    margin-top: 8em;
+    width: 60%;
+}
+
+.form__button {
+    display: block;
+    width: 100%;
+    background: #A1E6CC;
+    outline: 0;
+    border: 0;
+    padding: 1em 3em;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 2px;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+.form__button:hover,
+.form__button:focus {
+    border-color: #A1E6CC;
+    background: transparent;
+    color: #A1E6CC;
+}
+
+.modal--success.is-visible {
+    top: 0;
+    background: #fff;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.autocomplete-items {
+    position: absolute;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.autocomplete-items div:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: var(--color-primary-dark) !important;
+    color: #ffffff;
+}
+
+@media screen and (max-width:567px) {
+    .form .section.inline.group .fieldcontainer {
+        width: 100%
+    }
+
+    .form .section.inline.group .fieldcontainer:last-child {
+        padding-left: 0
+    }
+
+    .fieldcontainer:last-child {
+        padding-left: 0 !important
+    }
+
+    .input-wrapper.twin {
+        width: 100%
+    }
+
+    .twin:last-child {
+        padding-left: 0;
+    }
+
+    .twin:last-child label {
+        padding-left: 0;
+    }
+}
+
+
+
+
+/*JCF Select*/
+
+
+
+.jcf-select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-bottom: 1px solid var(--color-contrast-higher);
+    margin: 25px 0 12px;
+    width: 100%;
+    height: 26px;
+    font-size: 16px;
+}
+
+.jcf-select:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--color-primary-darker)
+}
+
+.jcf-select .jcf-select-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    display: block;
+    line-height: 26px;
+    margin: 0 35px 0 8px;
+}
+
+body > .jcf-select-drop {
+    position: absolute;
+    margin: -1px 0 0;
+    z-index: 9999;
+}
+
+
+.jcf-select-drop .jcf-select-drop-content {
+    border: 1px solid var(--color-primary-darker);
+}
+
+.jcf-select-drop.jcf-compact-multiple .jcf-hover {
+    background: var(--color-contrast-low);
+}
+
+.jcf-select-drop.jcf-compact-multiple .jcf-selected {
+    background: #e6e6e6;
+    color: #000;
+}
+
+
+
+
+/* select options styles */
+
+.jcf-list {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    background: var(--color-bg);
+    line-height: 14px;
+    font-size: 12px;
+    width: 100%;
+}
+
+.jcf-list .jcf-list-content {
+    vertical-align: top;
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+}
+
+.jcf-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.jcf-list ul li {
+    overflow: hidden;
+    display: block;
+}
+
+.jcf-list .jcf-overflow {
+    overflow: auto;
+}
+
+.jcf-list .jcf-option {
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: default;
+    display: block;
+    padding: 10px;
+    color: #656565;
+    min-height: 14px;
+    height: 1%;
+    font-size: 16px;
+    font-family: "vicregular";
+}
+
+.jcf-list .jcf-disabled {
+    background: #fff !important;
+    color: #aaa !important;
+}
+
+.jcf-select-drop .jcf-hover,
+.jcf-list-box .jcf-selected {
+    background: #e6e6e6;
+    color: var(--color-contrast-higher);
+}
+
+.jcf-list .jcf-optgroup-caption {
+    white-space: nowrap;
+    font-weight: bold;
+    display: block;
+    padding: 5px 9px;
+    cursor: default;
+    color: #000;
+}
+
+.jcf-list .jcf-optgroup .jcf-option {
+    padding-left: 30px;
+}

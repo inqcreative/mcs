@@ -1,0 +1,42 @@
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    -webkit-transition: .05s;
+    transition: transform .15s;
+    background-color: #f5f5f5;
+    opacity: 0;
+    z-index: 999999999;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/*.cursor::before {
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: rgba(20, 20, 20, .5);
+        }*/
+
+.cursor-active {
+    -webkit-animation: mouseenter .3s forwards ease-in-out;
+    animation: mouseenter .3s forwards ease-in-out;
+}
+
+.cursor-inactive {
+    -webkit-animation: mouseleave .3s forwards ease-in-out;
+    animation: mouseleave .3s forwards ease-in-out;
+}

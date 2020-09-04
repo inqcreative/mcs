@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro');
+
+
+/*
+Tipue Slide 1.1
+Tipue Slide Copyright (c) 2019 Tipue
+Tipue Slide is released under the MIT License
+http://www.tipue.com/slide
+*/
+
+
+.tipue-clear
+{
+     clear: both;
+}
+.tipue-not
+{
+     text-decoration: none;
+}
+.tipue-slide-screen
+{
+     display: none;
+     position: fixed;
+     top: 0;
+     left 0;
+     width: 100%;
+     height: 100%;
+     z-index: 400;
+}
+#tipue-slide
+{
+     position: fixed;
+     box-sizing: border-box;
+     top: 0;
+     left: -375px;
+     width: 375px;
+     height: 100%;
+     background-color: #131313;
+     z-index: 500;
+     overflow-y: auto;
+}
+.tipue-slide-wrap
+{
+     display: none;
+     float: left;
+     padding: 20px 0 0 20px;
+}
+.tipue-slide-icon-wrap
+{
+     float: left;
+     height: 50px;
+     background-color: #272727;
+     box-sizing: border-box;
+     padding: 14px 3px 0 13px;
+     border-top-left-radius: 3px;
+     border-bottom-left-radius: 3px;
+}
+.tipue-slide-icon
+{     
+     font: 24px/1 'Open Sans', sans-serif;
+     -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+     color: #777;
+     transform: rotate(-45deg);
+}
+#tipue-slide-input
+{
+     float: left;
+     font: 14px 'Open Sans', sans-serif;
+     color: #ccc;     
+     -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+     width: 190px;
+     background-color: #272727;
+     border: none;
+     height: 50px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	box-sizing: border-box;
+     box-shadow: none;
+	outline: 0;
+	padding: 10px 12px 10px 10px;
+}
+.tipue-slide-clear-wrap
+{
+     float: left;
+     height: 50px;
+     width: 28px;
+     background-color: #272727;
+     box-sizing: border-box;
+     padding-top: 17px;
+     border-top-right-radius: 3px;
+     border-bottom-right-radius: 3px;
+}
+.tipue-slide-clear
+{
+     display: none;    
+     font: 17px/1 'Open Sans', sans-serif;
+     -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+     color: #999;
+     cursor: pointer;
+}
+.tipue-slide-close
+{
+     float: right;
+     font: 18px/1 'Open Sans', sans-serif;
+     color: #ccc;     
+     -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	padding: 17px 20px 0 0;
+	cursor: pointer;
+}
+#tipue-slide-content
+{
+     margin-top: 20px;
+}
+.tipue-slide-text
+{
+     position: relative;
+     font: 13px/1.5 'Source Code Pro', monospace;
+	color: #a9a9a9;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 2px 20px;
+	margin: 0 20px;
+	transition: all 0.6s;
+}
+.tipue-slide-text:hover
+{
+     color: #ddd;     
+}
+.tipue-slide-image
+{
+     position: relative;
+     width: 335px;
+     height: 130px;
+     background-size: cover;
+     background-position: center;
+     transition: all 3s;
+     opacity: 0.6;
+     border-radius: 3px;
+     margin: 15px 0 15px 20px;
+}
+.tipue-slide-image:hover
+{
+     opacity: 1;
+}
+.tipue-slide-image-block
+{
+     position: absolute;
+     padding: 16px 20px 14px 20px;
+     background: rgba(0, 0, 0, 0.7);
+     bottom: 0;
+     width: 100%;
+     border-bottom-left-radius: 3px;
+     border-bottom-right-radius: 3px;
+}
+.tipue-slide-image-text
+{
+     font: 13px/1.5 'Source Code Pro', monospace;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all 0.3s;
+}
+.tipue-slide-image-text:hover
+{
+     color: #fff;     
+}
+
+
+
+
+

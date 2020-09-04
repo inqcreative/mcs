@@ -1,0 +1,155 @@
+# v2.0 — 29 Dec 2019
+
+• Updated Mapbox GL JS from 1.2.0 to 1.4.1 on /nmelb.html.
+
+
+# v2.0.1 — 31 Dec 2019
+
+• Modified navbar with mix-blend-mode.
+• Reinstated the previously muted fullscreen mobile menu.
+
+
+# v2.1 — 31 Dec 2019
+
+• Deprecated homepage animated SVG, previous index.html renamed index-r.html.
+
+
+# v2.1.1 — 31 Dec 2019
+
+• Deprecated mix-blend-mode navbar and replaced it with --color-contrast-
+  higher.
+• Set navbar background from transparent to --color-bg.
+
+
+# v2.1.2 — 31 Dec 2019
+
+• Animated homepage tagline with anime.js using code from   https://tobiasahlin.com/moving-letters/.
+
+
+# v2.1.3 — 31 Dec 2019
+
+• Made Dark Mode label parent element to dark mode switch and set switch   display to inline-flex to achieve text & switch on same line.
+
+
+# v2.1.4 — 31 Dec 2019
+
+• Changed index.html title from "Test | MCS" to "Home | Melbourne Cardiology   Services — Excellence. Integrity. Quality.".
+
+
+# v2.1.5 — 31 Dec 2019
+
+• Renamed myFunction() to mcsprogressbar().
+• Renamed #myBar to #mcsprogress.
+• Renamed myFunction2() to mcsloader().
+
+
+# v2.1.6 — 31 Dec 2019
+
+• Added border-radius: 0 0 25px 25px to all last-child .sub-menu .menu-item   elements.
+• Changed .sub-menu background to --color-bg.
+
+
+# v2.1.7 — 1 Jan 2020
+
+• Set navbar font size to 0.8em.
+• Set navbar dropdown background to #9400FF and disabled link underline on   hover.
+
+
+# v2.1.8 — 1 Jan 2020
+
+• Added logo to navbar.
+
+
+# v2.1.9 — 1 Jan 2020
+
+• Added meta tags to index.html.
+
+
+# v2.1.10 — 1 Jan 2020
+
+• Populated navbar with links.
+• Set dropdown links to #FFFFFF on parent hover.
+
+
+# v2.1.11 — 1 Jan 2020
+
+• Set line-height of dropdown links to 1.5em.
+
+
+# v2.1.12 — 1 Jan 2020
+
+• Changed progress bar height from 8px to 2px.
+
+
+# v2.1.13 — 1 Jan 2020
+
+• Populated footer with links.
+
+
+# v2.1.14 — 2 Jan 2020
+
+• Modified footer to have all elements centered and with social icons a row   below copyright text.
+
+
+# v2.1.15 — 2 Jan 2020
+
+• Set dark mode text and switch cursor to pointer.
+
+
+# v2.1.16 — 2 Jan 2020
+
+• Ensured that .scrollUp only applies to desktop navbar .menu.
+
+
+# v2.1.17 — 2 Jan 2020
+
+• Set .ml12 font-size to 1rem when screen-width < 600px.
+
+
+# v2.1.18 — 2 Jan 2020
+
+• Created mobile navbar .mobmenu.
+
+
+# v2.1.19 — 2 Jan 2020
+
+• Made mobile menu operational.
+• Uploaded site to Netlify.
+
+
+# v2.1.20 — 2 Jan 2020
+
+• Set background of toggle menu to --color-contrast-higher.
+• Changed opacity of mobile menu overlay from 0.9 to 0.95.
+• Increased z-index of .header for progress bar to 100000000000.
+• Uploaded site to mcs.netlify.com.
+
+
+# v2.1.21 — 3 Jan 2020
+
+• Set mobile menu overlay background to --color-bg and links to 
+  --color-contrast-higher.
+
+
+# v2.1.22 — 3 Jan 2020
+
+• Added preliminary text on index.html.
+• Uploaded site to mcs.netlify.com.
+
+
+# v2.1.23 — 4 Jan 2020
+
+• Added hero background to index.html.
+• Set navbar background to transparent and apply .opaque when scrolled.
+
+
+# v2.1.24 — 4 Jan 2020
+
+• Assigned padding: 0.75rem 0 to .sub-menu .menu-item a, instead of parent.
+• Uploaded site to mcs.netlify.com.
+
+
+# v2.1.25 — 8 Jan 2020
+
+• Added Tipue Search to site.
+• Added search to navbar.
