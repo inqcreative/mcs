@@ -9,15 +9,15 @@ RewriteRule ^([^\.]+)$ $1.php [NC,L]
 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
 Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
-#RewriteCond %{HTTP_HOST} ^www\.nepmelbourne\.com$
+#RewriteCond %{HTTP_HOST} ^www\.melbournecardiology\.services$
 #RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
 #RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
-#RewriteRule ^/?$ "https\:\/\/nepmelbourne\.com\ \/" [R=301,L]
+#RewriteRule ^/?$ "https\:\/\/melbournecardiology\.services\ \/" [R=301,L]
 
 #Force non-www:
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www\.nepmelbourne\.com [NC]
-RewriteRule ^(.*)$ http://nepmelbourne.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www\.melbournecardiology\.services [NC]
+RewriteRule ^(.*)$ http://melbournecardiology.services/$1 [L,R=301]
 
 # X-XSS-Protection
 <IfModule mod_headers.c>
