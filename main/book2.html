@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -71,20 +72,231 @@
     <style>
         /* FilePond will automatically fill up all available horizontal space, it's best to limit it in some way */
         form {
-            max-width:24em;
+            max-width: 24em;
         }
+
     </style>
 
 </head>
+
 <body>
-    
-    <form action="https://melbournecardiology.services/api/submit.php" method="post" enctype="multipart/form-data">
+    <div id="content">
+        <div class="header" style="">
+            <div class="progress-container">
+                <div class="progress-bar" id="mcsprogress"></div>
+            </div>
+        </div>
+        <div id="ha-header">
+            <nav class="menu ha-header ha-header-shrink" style="background: var(--color-contrast-purple) !important;">
+                <ol class="dtmenu text">
+                    <li class="menu-item"><a href="/"><img src="assets/img/logomark-final%20white.png" style="max-height: 40px; width: auto"></a></li>
+                    <li class="menu-item dtmenuitem"><a href="about" class="white">About</a></li>
+                    <li class="menu-item dtmenuitem">
+                        <a href="services/" class="white">Services</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item purple"><a href="services/echo">Echocardiography</a></li>
+                            <li class="menu-item purple"><a href="services/stressecho">Stress Echocardiography</a></li>
+                            <li class="menu-item purple"><a href="services/holter">Holter Monitoring</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item dtmenuitem">
+                        <a href="locations/" class="dtmenuheader white">Locations</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item purple"><a href="locations/nmelb">North Melbourne</a></li>
+                            <li class="menu-item purple"><a href="locations/epworth">Epworth Richmond</a></li>
+                            <li class="menu-item purple"><a href="locations/mponds">Moonee Ponds</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item dtmenuitem">
+                        <a href="patients" class="dtmenuheader white">Patients</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item purple"><a href="book">Request Appointment</a></li>
+                            <li class="menu-item purple"><a href="contact">General Enquiries</a></li>
+                            <li class="menu-item purple"><a href="feedback">Feedback</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item dtmenuitem"><a href="refer" class="boldbtn">Refer a Patient</a></li>
+                    <!--<li class="menu-item dtmenuitem">
+                        <a href="search">
+                            <svg class="icon" viewBox="0 0 20 20" aria-label="Toggle search">
+                                <title></title>
+                                <circle cx="8.5" cy="8.5" r="6.5" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></circle>
+                                <line x1="18" y1="18" x2="13.096" y2="13.096" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></line>
+                            </svg>
+                        </a>
+                    </li>-->
+                </ol>
+            </nav>
+            <nav class="mobmenu purple">
+                <a href="/"><img src="assets/img/logomark-final%20white.png" style="max-height: 30px; width: auto; margin: 16px 0 0 20px"></a>
+                <div class="button_container purple" id="toggle" data-target="#overlay" aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </nav>
 
-        <input type="file" name="filepond[]" multiple>
+            <div class="overlay purple" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="services/">Services</a></li>
+                        <li><a href="locations/">Locations</a></li>
+                        <li><a href="patients">Patients</a></li>
+                        <li><a href="refer">Practitioners</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="scrollContent ha-waypoint" data-animate-down="ha-header-shrink" data-animate-up="ha-header-show" style="background-color: var(--color-bg)">
+            <div class="heropurple">
+                <!--<img src="assets/img/Layer0.png" style="width: 100vw; height: 100%; z-index: -1; opacity: 0.25">-->
+                <div class="col-12">
+                    <h1 class="textb white herotitle" style="text-align: center; padding-top: 200px">Apointment Request</h1>
+                </div>
+            </div>
+            <div class="container-fluid feature row" style="margin-left: 0 !important; margin-right: 0 !important; padding-left: 0 !important; padding-right: 0 !important;">
+                <div class="col-sm-1"></div>
+                <div class="col-12 col-sm-10 pt-5 text3 container container--adaptive">
+                    <p class="textp1">
+                        Please submit the form if you are a prospective patient, have received a referral from your doctor, and would like to request an appointment.
+                    </p>
+                    <hr style="border: 1px solid var(--color-contrast-higher)" class="mt-5">
+                    <div class="container">
+                        <div class="row pb-2">
+                            <div class="col-12">
+                                <h4 class="text textc" style="text-align: center">Step 1 of 2</h4>
+                                <div class="form-assembly-form__container">
+                                    <div class="formcontainer">
+                                        <div class="">
+                                            <div class="form" dir="ltr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal__content px-sm-5">
+                                    <form method="post" action="https://api.formcake.com/api/form/2079b695-d296-499e-9cec-1d3e3c24d088/submission" role="form" enctype="application/x-www-form-urlencoded" class="form" id="form">
 
-        <button type="submit">Submit</button>
-    
-    </form>
+                                        <fieldset>
+                                            <legend class="textp textc">Your Details</legend>
+
+                                        </fieldset>
+
+
+                                        <form action="https://melbournecardiology.services/api/submit.php" method="post" enctype="multipart/form-data">
+
+                                            <input type="file" name="filepond[]" multiple>
+
+                                            <button type="submit">Submit</button>
+
+                                        </form>
+
+                                        <input type="file" class="filepond" name="attachment" multiple data-allow-reorder="true" data-max-file-size="30MB" data-max-files="5">
+                                        <button type="submit" class="boldbtn mt-3 py-3" style="border: none; width: 100%">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="row" style="background: var(--color-bg)">
+                <div class="col-12" style="margin-right: 0 !important; padding-right: 0 !important;">
+                    <footer class="main-footer" data-scroll>
+                        <script>
+                            var fero_server_id = '$2y$10$ZisV/mjILpfoj1Cb3toxlOw6PKpslf6sU20bgiwI9omoQSoNNTXzi';
+
+                        </script>
+                        <script src='https://fero.io/analytics.js'></script>
+                        <div class="container container--lg">
+                            <div class="main-footer__content justify-content-center">
+                                <nav class="main-footer__nav">
+                                    <div class="main-footer__nav-list" style="text-align: center">
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header" data-splitting>Quick Links</h5>
+                                            <div class="main-footer__nav-link"><a href="about">About Us</a></div>
+                                            <div class="main-footer__nav-link"><a href="referral">Referral Form</a></div>
+                                            <div class="main-footer__nav-link"><a href="faqs">FAQs</a></div>
+                                        </div>
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header" data-splitting>Services</h5>
+                                            <div class="main-footer__nav-link"><a href="services/echo">Echocardiogram</a></div>
+                                            <div class="main-footer__nav-link"><a href="services/stressecho">Stress Echocardiogram</a></div>
+                                            <div class="main-footer__nav-link"><a href="services/holter">Holter Monitoring</a></div>
+                                        </div>
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header" data-splitting>Locations</h5>
+                                            <div class="main-footer__nav-link"><a href="locations/nmelb">North Melbourne</a></div>
+                                            <div class="main-footer__nav-link"><a href="locations/epworth">Epworth Richmond</a></div>
+                                            <div class="main-footer__nav-link"><a href="locations/mponds">Moonee Ponds</a></div>
+                                        </div>
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header" data-splitting>Contact</h5>
+                                            <div class="main-footer__nav-link"><a href="contact">General Enquiries</a></div>
+                                            <div class="main-footer__nav-link"><a href="book">Request Appoinment</a></div>
+                                            <div class="main-footer__nav-link"><a href="feedback">Submit Feedback</a></div>
+                                            <div class="main-footer__nav-link"><a href="tel:1800880770">1800 880 770</a></div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div> <!-- main-footer__content -->
+                            <div class="container-fluid">
+                                <div class="main-footer__colophon row">
+                                    <div class="main-footer__colophon-nav text col-12 text-center justify-content-center" style="font-size: 12px">
+                                        <p>
+                                            <span>&copy; 2018
+                                                <script>
+                                                    new Date().getFullYear() > 2018 && document.write("- " + new Date().getFullYear());
+
+                                                </script> Melbourne Cardiology Services. All rights reserved. Website by INQ Creative.
+                                            </span>
+                                            <a href="terms">Terms</a>.
+                                            <a href="privacy">Privacy</a>.
+                                        </p>
+                                    </div>
+                                    <div class="main-footer__colophon-nav text col-12 text-center justify-content-center" style="font-size: 12px">
+                                        <label class="dmode" style="font-size: 12px; vertical-align: middle; position: relative; display: inline-block;">Dark Mode
+                                            <div class="switch">
+                                                <input class="switch__input" type="checkbox" id="themeSwitch">
+                                                <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+                                                <div aria-hidden="true" class="switch__marker"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="main-footer__socials col-12 text-center justify-content-center">
+                                        <a href="tel:1800880770">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </a>
+                                        <a href="mailto:admin@melbournecardiology.services?Subject=Website%20Enquiry" target="_blank" style="margin: 0 var(--space-xxs) 0 var(--space-xxs)">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="https://fb.me/mcsmelb" target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="main-footer__colophon-nav text col-12 text-center justify-content-center" style="font-size: 12px">
+                                        <p>Have a great <span id="daygreeting"><noscript>day</noscript></span>!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- container -->
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/cursor.js"></script>
+    <script type="text/javascript" src="assets/js/progressbar.js"></script>
+    <script type="text/javascript" src="assets/js/daygreeting.js"></script>
+    <script type="text/javascript" src="assets/js/form.js"></script>
+
 
     <!-- Babel polyfill, contains Promise -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser-polyfill.min.js"></script>
@@ -92,8 +304,8 @@
 
     <!-- Get FilePond polyfills from the CDN -->
     <script src="https://unpkg.com/filepond-polyfill/dist/filepond-polyfill.js"></script>
-  
-   
+
+
     <!-- Get FilePond JavaScript and its plugins from the CDN -->
     <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
     <script src="https://unpkg.com/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.js"></script>
@@ -102,40 +314,40 @@
     <script src="https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.js"></script>
     <script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.js"></script>
     <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
-    
+
     <!-- FilePond init script -->
     <script>
+        // Register plugins
+        FilePond.registerPlugin(
+            FilePondPluginFileValidateSize,
+            FilePondPluginImageExifOrientation,
+            FilePondPluginImageCrop,
+            FilePondPluginImageResize,
+            FilePondPluginImagePreview,
+            FilePondPluginImageTransform
+        );
 
-    // Register plugins
-    FilePond.registerPlugin(
-        FilePondPluginFileValidateSize,
-        FilePondPluginImageExifOrientation,
-        FilePondPluginImageCrop,
-        FilePondPluginImageResize,
-        FilePondPluginImagePreview,
-        FilePondPluginImageTransform
-    );
-    
-    // Set default FilePond options
-    FilePond.setOptions({
+        // Set default FilePond options
+        FilePond.setOptions({
 
-        // maximum allowed file size
-        maxFileSize: '5MB',
+            // maximum allowed file size
+            maxFileSize: '5MB',
 
-        // crop the image to a 1:1 ratio
-        //imageCropAspectRatio: '1:1',
+            // crop the image to a 1:1 ratio
+            //imageCropAspectRatio: '1:1',
 
-        // resize the image
-        imageResizeTargetWidth: 200,
+            // resize the image
+            imageResizeTargetWidth: 200,
 
-        // upload to this server end point
-        server: 'api/'
-    });
+            // upload to this server end point
+            server: 'api/'
+        });
 
-    // Turn a file input into a file pond
-    var pond = FilePond.create(document.querySelector('input[type="file"]'));
+        // Turn a file input into a file pond
+        var pond = FilePond.create(document.querySelector('input[type="file"]'));
 
     </script>
 
 </body>
+
 </html>
