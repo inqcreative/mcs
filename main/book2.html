@@ -51,9 +51,6 @@
 
     <title></title>
 
-    <!-- Get FilePond and FilePond image preview plugin styles from a CDN -->
-    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
-    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mcs.css">
     <link rel="stylesheet" href="assets/css/mcs1.css">
@@ -64,10 +61,22 @@
     <link rel="stylesheet" href="assets/datepicker-1.0.9/dist/datepicker.css">
     <!--<link rel="stylesheet" href="assets/bootstrap-datepicker-master/dist/css/bootstrap-datepicker.css">-->
     <link rel="stylesheet" href="assets/filepond-4.19.1/dist/filepond.css">
+    <!--<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">-->
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/medel.css">
     <link rel="stylesheet" href="assets/fonts/montserrat.css">
     <link rel="stylesheet" href="assets/fonts/toriga.css">
     <link rel="stylesheet" href="assets/fonts/vic.css">
+    <style>
+        .white {
+            color: white !important;
+        }
+
+        .black {
+            color: black !important;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -323,7 +332,7 @@
 
             // upload to this server end point
             server: 'api/',
-            
+
             credits: 'false'
         });
 
@@ -331,6 +340,8 @@
         var pond = FilePond.create(document.querySelector('input[type="file"]'));
 
     </script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
     <div class="cursor"></div>
 
 </body>
