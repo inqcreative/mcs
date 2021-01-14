@@ -958,9 +958,14 @@ a {
 
 .heropurple {
     height: 400px;
-    background-color: #8737FF
+    background-color: #5A50F5;
+        /*#8737FF*/
         /*#9400FF*/
     ;
+}
+
+.purple {
+    background-color: #5A50F5;
 }
 
 [data-scroll] {
