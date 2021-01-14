@@ -964,8 +964,9 @@ a {
     ;
 }
 
-.purple {
-    background-color: #5A50F5;
+.purple-bg {
+    background-color: #5A50F5 !important;
+    background: #5A50F5 !important;
 }
 
 [data-scroll] {
