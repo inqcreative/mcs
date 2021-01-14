@@ -345,7 +345,7 @@ svg {
     --color-contrast-higher-h: 240;
     --color-contrast-higher-s: 8%;
     --color-contrast-higher-l: 12%;
-    --color-contrast-purple: #8737FF /*#9400FF*/;
+    --color-contrast-purple: #5A50F5 /*#8737FF*/ /*#9400FF*/;
 }
 
 [data-theme] {
