@@ -597,7 +597,7 @@ function handle_transfer_ids_post($ids) {
             </div>
             <div class="container-fluid feature row" style="margin-left: 0 !important; margin-right: 0 !important; padding-left: 0 !important; padding-right: 0 !important;">
                 <div class="col-1"></div>
-                <div class="col-10 py-3 text3 container container--adaptive">
+                <div class="col-10 py-3 mb-5 text3 container container--adaptive">
                     <div class="" style="text-align: center">
                         <div id="button1">
                             <a class="mybtn link text3" href="echo"><span>Echocardiography</span></a>
