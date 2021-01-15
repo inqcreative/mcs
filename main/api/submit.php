@@ -520,18 +520,6 @@ function handle_transfer_ids_post($ids) {
         <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQXNP5K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="loading">
-        <div id="loading-content">
-            <div class="indicator">
-                <svg width="68px" height="50px">
-                    <polyline id="back" points="1 30 15 30 19 25 23 35 27 1 31 45 35 30 39 30 43 25 47 30 65 30"></polyline>
-                    <polyline id="front" points="1 30 15 30 19 25 23 35 27 1 31 45 35 30 39 30 43 25 47 30 65 30"></polyline>
-                </svg>
-            </div>
-            <br>
-            <div>Loading</div>
-        </div>
-    </div>
     <div id="content">
         <div class="header" style="">
             <div class="progress-container">
