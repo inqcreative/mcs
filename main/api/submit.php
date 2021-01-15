@@ -158,7 +158,6 @@ function handle_transfer_ids_post($ids) {
     <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/favicon-76.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/favicon-152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon-180.png">
-    <link rel="canonical" href="https://melbournecardiology.services/about">
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">-->
     <!--<link rel="stylesheet" href="bootstrap-4.1.2/dist/css/bootstrap.min.css">-->
     <!--<link rel="stylesheet" href="assets/css/bootstrap.css">-->
