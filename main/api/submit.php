@@ -88,7 +88,6 @@ function handle_transfer_ids_post($ids) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="description" content="">
 	<meta name="author" content="">
