@@ -601,7 +601,6 @@ function handle_transfer_ids_post($ids) {
                     <div class="" style="text-align: center">
                         <div id="button1">
                             <a class="mybtn link text3" href="echo"><span>Echocardiography</span></a>
-                            <!--<a class="mybtn1 mybtn1--gradient link text3" href="book"><span>Book an Appointment</span></a>-->
                         </div>
                     </div>
                 </div>
