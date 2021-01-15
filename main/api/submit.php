@@ -622,7 +622,7 @@ function handle_transfer_ids_post($ids) {
                                         <div class="main-footer__nav-item">
                                             <h5 class="main-footer__nav-header">Quick Links</h5>
                                             <div class="main-footer__nav-link"><a href="../about">About Us</a></div>
-                                            <div class="main-footer__nav-link"><a href="../referral">Referral Form</a></div>
+                                            <div class="main-footer__nav-link"><a href="../refer">Referral Form</a></div>
                                             <div class="main-footer__nav-link"><a href="../faqs">FAQs</a></div>
                                         </div>
                                         <div class="main-footer__nav-item">
