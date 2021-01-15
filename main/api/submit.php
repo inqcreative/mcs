@@ -593,7 +593,7 @@ function handle_transfer_ids_post($ids) {
             <div class="heropurple">
                 <!--<img src="assets/img/Layer0.png" style="width: 100vw; height: 100%; z-index: -1; opacity: 0.25">-->
                 <div class="col-12">
-                    <h1 class="textb white herotitle" style="text-align: center; padding-top: 200px">Our Services</h1>
+                    <h1 class="textb white herotitle" style="text-align: center; padding-top: 200px">Thank You</h1>
                 </div>
             </div>
             <div class="container-fluid feature row" style="margin-left: 0 !important; margin-right: 0 !important; padding-left: 0 !important; padding-right: 0 !important;">
