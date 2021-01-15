@@ -104,7 +104,6 @@ function handle_transfer_ids_post($ids) {
 </head>
 
 <body>
-	<!-- Start coding here -->
 
 	<h1>Thank you!</h1>
 
