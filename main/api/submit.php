@@ -99,7 +99,6 @@ function handle_transfer_ids_post($ids) {
 	<link rel="apple-touch-icon" href="">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<!-- Link to your css file -->
 	<link rel="stylesheet" href="">
 
 </head>
