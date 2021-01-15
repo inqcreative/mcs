@@ -510,7 +510,7 @@ function handle_transfer_ids_post($ids) {
         }
 
     </style>
-    <title>Our Services | Melbourne Cardiology Services — Cardiac services with a focus on excellence, integrity &amp; quality.</title>
+    <title>Thank You | Melbourne Cardiology Services — Cardiac services with a focus on excellence, integrity &amp; quality.</title>
 </head>
 
 <body onload="mcsloader()" style="cursor: none">
