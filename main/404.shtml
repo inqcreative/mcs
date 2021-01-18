@@ -1,156 +1,670 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130193313-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-130193313-1');
-        </script>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="INQ Creative">
-        <meta name="description" content="Melbourne Cardiology Services">
-        <meta name="google-site-verification" content="5_zVDNQM2K07ww8qrHqTIXMFP2uKT-CQS7dkmWNfa98" />
-        <meta name="keywords" content="melbourne, cardiology, services, clinic, epping, north melbourne, richmond, cardiac, cardiologist, consulting, holter monitoring, stress echocardiogram, echocardiogram, echo">
-        <link rel="icon" href="mcsassets/images/icon.png">
-        <!-- iPhone(first generation or 2G), iPhone 3G, iPhone 3GS -->
-        <link rel="apple-touch-icon" sizes="57x57" href="mcsassets/images/apple-touch-icon.png">
-        <!-- iPad and iPad mini @1x -->
-        <link rel="apple-touch-icon" sizes="76x76" href="mcsassets/images/apple-touch-icon.png">
-        <!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
-        <link rel="apple-touch-icon" sizes="120x120" href="mcsassets/images/apple-touch-icon.png">
-        <!-- iPad and iPad mini @2x -->
-        <link rel="apple-touch-icon" sizes="152x152" href="mcsassets/images/apple-touch-icon.png">
-        <!-- iPad Pro -->
-        <link rel="apple-touch-icon" sizes="167x167" href="mcsassets/images/apple-touch-icon.png">
-        <!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
-        <link rel="apple-touch-icon" sizes="180x180" href="mcsassets/images/apple-touch-icon.png">
-        <!-- Android Devices High Resolution -->
-        <link rel="icon" sizes="192x192" href="mcsassets/images/icon.png">
-        <!-- Android Devices Normal Resolution -->
-        <link rel="icon" sizes="128x128" href="mcsassets/images/icon.png">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-        <!--<link rel="stylesheet" href="bootstrap-4.1.2/dist/css/bootstrap.min.css">-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <!--<link rel="stylesheet" href="fonts/fontawesome-free-5.1.1-web/css/all.css">-->
-        <link rel="stylesheet" href="mcsassets/css/mcs.css">
-        <link rel="stylesheet" href="mcsassets/css/mcsf.css">
-        <link rel="stylesheet" href="mcsassets/css/mcsnav.css">
-        <script src="https://www.w3counter.com/tracker.js?id=123093"></script>
-        <style>
-        </style>
-        <title>404 | Melbourne Cardiology Services — Cardiac services with a focus on excellence, integrity &amp; quality.</title> 
-    </head>
-    <body  onmousedown='return false;' onselectstart='return false;'>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark navbar-transparent flex-md-row" color-on-scroll="10">
-            <a class="navbar-brand" href="/" data-toggle="tooltip" data-placement="bottom" data-html="true" data-animation="true" data-delay='{"show":"50", "hide":"500"}' title="<b>Home</b>">
-                <img src="mcsassets/images/icon.png" width="50px">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text" id="nav">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="/">Home</a>     
-                    </li>
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="about">About</a>     
-                    </li>
-                    <li class="nav-item-q dropdown">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" data-toggle="dropdown" href="services" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
-                        <div class="dropdown-menu justify-content-center text-center">
-                            <a class="dropdown-item" href="services/echo">Echocardiogram</a>
-                            <a class="dropdown-item" href="services/stressecho">Stress Echocardiogram</a>
-                            <a class="dropdown-item" href="services/holter">Holter Monitor</a>
-                            <a class="dropdown-item" href="services/cct">Cardiac CT</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="services/referral">Download Referral Form</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" data-toggle="dropdown" href="locations" role="button" aria-haspopup="true" aria-expanded="false">Locations</a>
-                        <div class="dropdown-menu justify-content-center text-center">
-                            <a class="dropdown-item" href="locations/epworth">Richmond</a>
-                            <a class="dropdown-item" href="locations/mponds">Moonee Ponds</a>
-                            <a class="dropdown-item" href="locations/nmelb">North Melbourne</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="contact">Contact</a>
-                    </li>
-                </ul>
-                <span class="phone">
-                    Call Us: 
-                    <a href="tel:1800880770" class="mr-2 btn phone1">1800 880 770</a>
-                </span> 
-                <a class="btn btn-outline-warning my-2 my-sm-0 hvr-wobble-horizontal" href="book">Request An Appointment</a>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Melbourne Cardiology Services, echo, echocardiography, holter monitoring, cardiac services in North Melbourne" />
+    <meta name="description" content="At Melbourne Cardiology Services, we value our patients and strive to serve them well. We offer services in echocardiography, Holter monitoring, stress echocardiography, as well as consultations across multiple locations. We aim to provide our patients and referring doctors with quick turnarounds and service that embodies our credo of excellence, integrity and quality." />
+    <meta name="copyright" content="Melbourne Cardiology Services">
+    <meta name="language" content="EN">
+    <meta name="robots" content="index,follow" />
+    <meta name="copyright" content="Melbourne Cardiology Services">
+    <meta name="owner" content="Melbourne Cardiology Services">
+    <meta name="url" content="https://melbournecardiology.services">
+    <meta name="identifier-URL" content="https://melbournecardiology.services">
+    <meta name="directory" content="submission">
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="revisit-after" content="7 days">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/assets/img/favicon-144.png">
+    <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/assets/img/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/assets/img/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/img/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="bootstrap-4.1.2/dist/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.css">-->
+    <link rel="stylesheet" href="assets/bootstrap-4.5.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <!--integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"-->
+    <!--<link rel="stylesheet" href="fonts/fontawesome-free-5.1.1-web/css/all.css">-->
+    <!--<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+    <!--<link rel="stylesheet" href="assets/css/scrollreveal.css">-->
+    <link href="https://unpkg.com/splitting@1.0.0/dist/splitting.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MQXNP5K');
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130193313-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-130193313-1');
+
+    </script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <!--<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>-->
+    <script src="https://unpkg.com/splitting@1.0.0/dist/splitting.js"></script>
+    <script src="https://unpkg.com/scroll-out@2.2.3/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script>
+        var ml = {
+            timelines: {}
+        };
+
+        /*ScrollReveal({
+            scale: 0.85,
+            duration: 1000,
+        });*/
+
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+
+    </script>
+    <script type="text/javascript" src="assets/js/highlight.pack.js"></script>
+    <script type="text/javascript" src="assets/js/modernizr.custom.min.js"></script>
+    <!--<script type="text/javascript" src="assets/js/TweenMax.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/ScrollMagic.js"></script>
+    <script type="text/javascript" src="assets/js/animation.gsap.js"></script>
+    <script>
+        document.getElementsByTagName("html")[0].className += " js";
+        /*
+        $(document).ajaxStart(function(){
+            $("#loading").removeClass('hide');
+        }).ajaxStop(function(){
+            $("#loading").addClass('hide');
+        });
+        */
+        var loader;
+
+        function mcsloader() {
+            loader = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("content").style.display = "block";
+        }
+
+    </script>
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'NSGNC';
+        window['_fs_namespace'] = 'FS';
+        (function(m, n, e, t, l, o, g, y) {
+            if (e in m) {
+                if (m.console && m.console.log) {
+                    m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+                }
+                return;
+            }
+            g = m[e] = function(a, b, s) {
+                g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+            };
+            g.q = [];
+            o = n.createElement(t);
+            o.async = 1;
+            o.crossOrigin = 'anonymous';
+            o.src = 'https://' + _fs_host + '/s/fs.js';
+            y = n.getElementsByTagName(t)[0];
+            y.parentNode.insertBefore(o, y);
+            g.identify = function(i, v, s) {
+                g(l, {
+                    uid: i
+                }, s);
+                if (v) g(l, v, s)
+            };
+            g.setUserVars = function(v, s) {
+                g(l, v, s)
+            };
+            g.event = function(i, v, s) {
+                g('event', {
+                    n: i,
+                    p: v
+                }, s)
+            };
+            g.shutdown = function() {
+                g("rec", !1)
+            };
+            g.restart = function() {
+                g("rec", !0)
+            };
+            g.log = function(a, b) {
+                g("log", [a, b])
+            };
+            g.consent = function(a) {
+                g("consent", !arguments.length || a)
+            };
+            g.identifyAccount = function(i, v) {
+                o = 'account';
+                v = v || {};
+                v.acctId = i;
+                g(o, v)
+            };
+            g.clearUserCookie = function() {};
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+
+    </script>
+    <!-- Start of Woopra Code -->
+    <script>
+        (function() {
+            var t, i, e, n = window,
+                o = document,
+                a = arguments,
+                s = "script",
+                r = ["config", "track", "identify", "visit", "push", "call", "trackForm", "trackClick"],
+                c = function() {
+                    var t, i = this;
+                    for (i._e = [], t = 0; r.length > t; t++)(function(t) {
+                        i[t] = function() {
+                            return i._e.push([t].concat(Array.prototype.slice.call(arguments, 0))), i
+                        }
+                    })(r[t])
+                };
+            for (n._w = n._w || {}, t = 0; a.length > t; t++) n._w[a[t]] = n[a[t]] = n[a[t]] || new c;
+            i = o.createElement(s), i.async = 1, i.src = "//static.woopra.com/js/w.js", e = o.getElementsByTagName(s)[0], e.parentNode.insertBefore(i, e)
+        })("woopra");
+
+        woopra.config({
+            domain: 'melbournecardiology.services'
+        });
+        woopra.track();
+
+    </script>
+    <!-- End of Woopra Code -->
+    <script src="https://www.w3counter.com/tracker.js?id=123093"></script>
+    <!-- Hotjar Tracking Code for https://melbournecardiology.services -->
+    <script>
+        (function(h, o, t, j, a, r) {
+            h.hj = h.hj || function() {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 1465319,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+    </script>
+    <!-- Quantcast Tag -->
+    <script type="text/javascript">
+        var _qevents = _qevents || [];
+
+        (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+        })();
+
+        _qevents.push({
+            qacct: "p-1g91qYrX5-hfd"
+        });
+
+    </script>
+    <noscript>
+        <div style="display:none;">
+            <img src="//pixel.quantserve.com/pixel/p-1g91qYrX5-hfd.gif" border="0" height="1" width="1" alt="Quantcast" />
+        </div>
+    </noscript>
+    <!-- End Quantcast tag -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5d6869ba77aa790be331803f/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+
+    </script>
+    <!--End of Tawk.to Script-->
+    <script id="navegg" type="text/javascript">
+        (function(n, v, g) {
+            o = "Navegg";
+            if (!n[o]) {
+                a = v.createElement('script');
+                a.src = g;
+                b = document.getElementsByTagName('script')[0];
+                b.parentNode.insertBefore(a, b);
+                n[o] = n[o] || function(parms) {
+                    n[o].q = n[o].q || [];
+                    n[o].q.push([this, parms])
+                };
+            }
+        })
+        (window, document, 'https://tag.navdmp.com/universal.min.js');
+        window.naveggReady = window.naveggReady || [];
+        window.nvg57748 = new Navegg({
+            acc: 57748
+        });
+
+    </script>
+    <script type="text/javascript">
+        (function(a, s, k, p, r) {
+                r = a.createElement('script');
+                r.type = 'text/javascript';
+                r.async = true;
+                r.onload = function() {
+                    PULSELIB.init([k, p])
+                };
+                r.src = s;
+                a.getElementsByTagName('head')[0].appendChild(r);
+            }
+            (document, "https://s3.amazonaws.com/pulsemetrics/pulse-metrics.js", "DuFcpFbhCiuOSOPDk5BfFJ5ZOYpI0YqtgDeBaxk4mrDlgDOeQ5", "pulse"));
+
+    </script>
+    <script type="application/javascript">
+        (function(b, o, n, g, s, r, c) {
+            if (b[s]) return;
+            b[s] = {};
+            b[s].scriptToken = "Xy0xMTE1MjE0NTI3";
+            b[s].callsQueue = [];
+            b[s].api = function() {
+                b[s].callsQueue.push(arguments);
+            };
+            r = o.createElement(n);
+            c = o.getElementsByTagName(n)[0];
+            r.async = 1;
+            r.src = g;
+            r.id = s + n;
+            c.parentNode.insertBefore(r, c);
+        })(window, document, "script", "//cdn.oribi.io/Xy0xMTE1MjE0NTI3/oribi.js", "ORIBI");
+
+    </script>
+    <!-- Start Lyra-->
+    <!--<script>
+        var lyra = window.lyra || [];
+        lyra.push(['lyra_Id', '5d687eb205d05']);
+
+    </script>
+    <script async src='https://thelyra.pro/a/analytics.js'></script>-->
+    <!-- End Lyra-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mcs.css">
+    <link rel="stylesheet" href="assets/css/mcs1.css">
+    <link rel="stylesheet" href="assets/css/cursor.css">
+    <link rel="stylesheet" href="assets/css/micromodal.css">-
+    <link rel="stylesheet" href="assets/fonts/medel.css">
+    <link rel="stylesheet" href="assets/fonts/montserrat.css">
+    <link rel="stylesheet" href="assets/fonts/toriga.css">
+    <link rel="stylesheet" href="assets/fonts/vic.css">
+    <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .white {
+            color: white !important;
+        }
+
+        .black {
+            color: black !important;
+        }
+
+        .herotitle:after {
+            background-image: url("assets/img/swoosh-white2.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            content: '';
+            display: block;
+            height: .25em;
+            left: -.2em;
+            position: absolute;
+            top: calc(100% - .15em);
+            width: calc(100% + .4em);
+        }
+
+        @media (max-width: 575.98px) {
+            .shrinkcentre {
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+
+    </style>
+    <title>404 | Melbourne Cardiology Services — Cardiac services with a focus on excellence, integrity &amp; quality.</title>
+</head>
+
+<body onload="mcsloader()" style="cursor: none">
+    <!--     onmousedown='return false;' onselectstart='return false;'    -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQXNP5K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="loading" class="">
+        <div id="loading-content">
+            <div class="indicator">
+                <svg width="68px" height="50px">
+                    <polyline id="back" points="1 30 15 30 19 25 23 35 27 1 31 45 35 30 39 30 43 25 47 30 65 30"></polyline>
+                    <polyline id="front" points="1 30 15 30 19 25 23 35 27 1 31 45 35 30 39 30 43 25 47 30 65 30"></polyline>
+                </svg>
             </div>
-            <div class="collapse navbar-collapse text justify-content-end nav-justified" id="navMobile">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="/">Home</a>     
-                    </li>
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="about">About</a>     
-                    </li>
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="locations">Locations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navlink btn btn-light my-2 my-sm-0 mx-2" href="contact">Contact</a>
-                    </li>
-                </ul>
-                <a class="btn btn-outline-warning btn-block my-2 my-sm-0 ml-auto hvr-wobble-horizontal" href="book">Request An Appointment</a>
-            </div>
-        </nav>
-        <div id="mcshome">
-            <div class="hometitle">
-                <!--<img src="images/U-trans.png" width="600px">-->
-                <span class="text">Error 404</span>
-                <br>
-                <!--#echo var="REDIRECT_STATUS" -->
-                <!--#echo var="REQUEST_URI" -->
-                <br>
-                <h4 class="text2">Page Not Found</h4>
-                <br>
-                <div id="button1"> 
-                    <a class="mybtn link text3" href="/"><span>Go to Home</span></a>
-                    <!--<a class="mybtn1 mybtn1--gradient link text3" href="book"><span>Book an Appointment</span></a>-->
-                </div>
-            </div>
-            <div id="homefooter">
-                <div id="homefootercontent">
-                     <p class="h6 footertext">&copy; 2019 Melbourne Cardiology Services. All rights reserved. Website by<a class="text-dark ml-1" href="mailto:inqcreativemelbourne@gmail.com?subject=General%20Enquiry%20From%20The%20MCS%20Website" target="_blank">INQ Creative</a>.</p>
-                </div>
+            <br>
+            <div>Loading</div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="header" style="">
+            <div class="progress-container">
+                <div class="progress-bar" id="mcsprogress"></div>
             </div>
         </div>
-        <!--<div class="homepagediv">
-        </div>-->
-        <!--<i class="fas fa-user"></i> <!-- uses solid style -->
-        <!--<i class="far fa-user"></i> <!-- uses regular style -->
-        <!--brand icon-->
-        <!--<i class="fab fa-github-square"></i> <!-- uses brands style -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-        <script>
-            $(window).scroll(function() {
-                if($(this).scrollTop() > 10) { /*height in pixels when the navbar becomes non opaque*/ 
-                    $('.navbar-transparent').addClass('opaque');
-                } 
-                else {
-                    $('.navbar-transparent').removeClass('opaque');
-                }
-            });
-        </script>
-    </body>
+        <div id="ha-header">
+            <nav class="menu ha-header ha-header-shrink" style="background: var(--color-contrast-purple) !important;">
+                <ol class="dtmenu text">
+                    <li class="menu-item"><a href="/"><img src="assets/img/logomark-final%20white.png" style="max-height: 40px; width: auto"></a></li>
+                    <li class="menu-item dtmenuitem"><a href="about" class="white">About</a></li>
+                    <li class="menu-item dtmenuitem">
+                        <a href="services/" class="white">Services</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item purple"><a href="services/echo">Echocardiography</a></li>
+                            <li class="menu-item purple"><a href="services/stressecho">Stress Echocardiography</a></li>
+                            <li class="menu-item purple"><a href="services/holter">Holter Monitoring</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item dtmenuitem">
+                        <a href="locations/" class="dtmenuheader white">Locations</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item purple"><a href="locations/nmelb">North Melbourne</a></li>
+                            <li class="menu-item purple"><a href="locations/epworth">Epworth Richmond</a></li>
+                            <li class="menu-item purple"><a href="locations/mponds">Moonee Ponds</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item dtmenuitem">
+                        <a href="contact" class="dtmenuheader white">Contact</a>
+                        <ol class="sub-menu">
+                            <li class="menu-item purple"><a href="book">Request Appointment</a></li>
+                            <li class="menu-item purple"><a href="contact">General Enquiries</a></li>
+                            <li class="menu-item purple"><a href="feedback">Feedback</a></li>
+                        </ol>
+                    </li>
+                    <li class="menu-item dtmenuitem"><a href="refer" class="boldbtn">Refer a Patient</a></li>
+                    <!--<li class="menu-item dtmenuitem">
+                        <a href="search">
+                            <svg class="icon" viewBox="0 0 20 20" aria-label="Toggle search">
+                                <title></title>
+                                <circle cx="8.5" cy="8.5" r="6.5" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2"></circle>
+                                <line x1="18" y1="18" x2="13.096" y2="13.096" fill="none" stroke="currentColor" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></line>
+                            </svg>
+                        </a>
+                    </li>-->
+                </ol>
+            </nav>
+            <nav class="mobmenu purple">
+                <a href="/"><img src="assets/img/logomark-final%20white.png" style="max-height: 30px; width: auto; margin: 16px 0 0 20px"></a>
+                <div class="button_container purple" id="toggle" data-target="#overlay" aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+            </nav>
+
+            <div class="overlay purple" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="services/">Services</a></li>
+                        <li><a href="locations/">Locations</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="refer">Practitioners</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="scrollContent ha-waypoint" data-animate-down="ha-header-shrink" data-animate-up="ha-header-show" style="background-color: var(--color-bg)">
+            <div class="heropurple">
+                <!--<img src="assets/img/Layer0.png" style="width: 100vw; height: 100%; z-index: -1; opacity: 0.25">-->
+                <div class="col-12">
+                    <h1 class="textb white herotitle" style="text-align: center; padding-top: 200px">404 Not Found</h1>
+                </div>
+            </div>
+            <div class="container-fluid feature row" style="margin-left: 0 !important; margin-right: 0 !important; padding-left: 0 !important; padding-right: 0 !important;">
+                <div class="col-1"></div>
+                <div class="col-10 py-5 text3 container container--adaptive center">
+                    <p class="textp1 center" style="text-align: center">
+                        Oh no! It seems the page you're looking for doesn't exist (yet)...
+                    </p>
+                    <div class="" style="text-align: center">
+                        <div id="button1">
+                            <a class="mybtn link text3" href="/"><span>Back to Home</span></a>
+                        </div>
+                        <div id="button1">
+                            <a class="mybtn link text3" href="contact"><span>Website Feedback</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <footer class="main-footer">
+                        <script>
+                            var fero_server_id = '$2y$10$ZisV/mjILpfoj1Cb3toxlOw6PKpslf6sU20bgiwI9omoQSoNNTXzi';
+
+                        </script>
+                        <script src='https://fero.io/analytics.js'></script>
+                        <div class="container container--lg">
+                            <div class="main-footer__content justify-content-center">
+                                <nav class="main-footer__nav">
+                                    <div class="main-footer__nav-list" style="text-align: center">
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header">Quick Links</h5>
+                                            <div class="main-footer__nav-link"><a href="about">About Us</a></div>
+                                            <div class="main-footer__nav-link"><a href="referral">Referral Form</a></div>
+                                            <div class="main-footer__nav-link"><a href="faqs">FAQs</a></div>
+                                        </div>
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header">Services</h5>
+                                            <div class="main-footer__nav-link"><a href="services/echo">Echocardiogram</a></div>
+                                            <div class="main-footer__nav-link"><a href="services/stressecho">Stress Echocardiogram</a></div>
+                                            <div class="main-footer__nav-link"><a href="services/holter">Holter Monitoring</a></div>
+                                        </div>
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header">Locations</h5>
+                                            <div class="main-footer__nav-link"><a href="locations/nmelb">North Melbourne</a></div>
+                                            <div class="main-footer__nav-link"><a href="locations/epworth">Epworth Richmond</a></div>
+                                            <div class="main-footer__nav-link"><a href="locations/mponds">Moonee Ponds</a></div>
+                                        </div>
+                                        <div class="main-footer__nav-item">
+                                            <h5 class="main-footer__nav-header">Contact</h5>
+                                            <div class="main-footer__nav-link"><a href="contact">General Enquiries</a></div>
+                                            <div class="main-footer__nav-link"><a href="book">Request Appoinment</a></div>
+                                            <div class="main-footer__nav-link"><a href="feedback">Submit Feedback</a></div>
+                                            <div class="main-footer__nav-link"><a href="tel:1800880770">1800 880 770</a></div>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div> <!-- main-footer__content -->
+                            <div class="container-fluid">
+                                <div class="main-footer__colophon row">
+                                    <div class="main-footer__colophon-nav text col-12 text-center justify-content-center" style="font-size: 12px">
+                                        <p>
+                                            <span>&copy; 2018
+                                                <script>
+                                                    new Date().getFullYear() > 2018 && document.write("- " + new Date().getFullYear());
+
+                                                </script> Melbourne Cardiology Services. All rights reserved. Website by INQ Creative.
+                                            </span>
+                                            <a href="terms">Terms</a>.
+                                            <a href="privacy">Privacy</a>.
+                                        </p>
+                                    </div>
+                                    <div class="main-footer__colophon-nav text col-12 text-center justify-content-center" style="font-size: 12px">
+                                        <label class="dmode" style="font-size: 12px; vertical-align: middle; position: relative; display: inline-block;">Dark Mode
+                                            <div class="switch">
+                                                <input class="switch__input" type="checkbox" id="themeSwitch">
+                                                <label aria-hidden="true" class="switch__label" for="themeSwitch">On</label>
+                                                <div aria-hidden="true" class="switch__marker"></div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="main-footer__socials col-12 text-center justify-content-center">
+                                        <a href="tel:1800880770">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </a>
+                                        <a href="mailto:admin@melbournecardiology.services?Subject=Website%20Enquiry" target="_blank" style="margin: 0 var(--space-xxs) 0 var(--space-xxs)">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="https://fb.me/mcsmelb" target="_blank">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </div>
+                                    <div class="main-footer__colophon-nav text col-12 text-center justify-content-center" style="font-size: 12px">
+                                        <p>Have a great <span id="daygreeting"><noscript>day</noscript></span>!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- container -->
+                    </footer>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+    <script type="text/javascript" src="assets/js/cursor.js"></script>
+    <script type="text/javascript" src="assets/js/progressbar.js"></script>
+    <script type="text/javascript" src="assets/js/daygreeting.js"></script>
+    <script>
+        if ('CSS' in window && 'supports' in window.CSS) {
+            var support = window.CSS.supports('mix-blend-mode', 'difference');
+            // tests for mix-blend-mode support
+            support = support ? 'mix-blend-mode' : 'no-mix-blend-mode';
+            document.documentElement.className += support;
+        }
+    </script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--<script src="assets/js/waypoints.min.js"></script>-->
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript";
+            mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/2316ea1d-a65f-40df-b098-262de54db077.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+
+    </script>
+    <!-- Default Statcounter code for MCS https://melbournecardiology.services -->
+    <script type="text/javascript">
+        var sc_project = 12079295;
+        var sc_invisible = 1;
+        var sc_security = "e6d9f3cd";
+        var sc_https = 1;
+
+    </script>
+    <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async>
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics" href="https://statcounter.com/" target="_blank">
+                <img class="statcounter" src="https://c.statcounter.com/12079295/0/e6d9f3cd/1/" alt="Web Analytics">
+            </a>
+        </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+    <!--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+    <script>
+        /*AOS.init();*/
+
+        /*$(window).on('scroll', function() {
+            AOS.init();
+        });*/
+
+        /*$(window).on("load", function() {
+            AOS.init();
+        });*/
+
+        /*let scrollRef = 0;
+
+        window.addEventListener('scroll', function() {
+            // increase value up to 10, then refresh AOS
+            scrollRef <= 5 ? scrollRef++ : AOS.refresh();
+        });*/
+
+    </script>
+    <script>
+        Splitting();
+
+    </script>
+    <script>
+        ScrollOut({
+            threshold: 0.1,
+            once: false
+        });
+
+    </script>
+    <div class="cursor"></div>
+</body>
+
 </html>
