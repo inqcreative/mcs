@@ -317,7 +317,7 @@ html {
   text-align: left; }
 
 .center, center-align {
-  text-align: center; }
+  text-align: center; !important}
 
 .right-align {
   text-align: right; }
