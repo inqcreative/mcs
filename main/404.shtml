@@ -485,7 +485,16 @@
                 <div class="col-1"></div>
                 <div class="col-10 py-5 text3 container container--adaptive center">
                     <p class="textp1 center" style="text-align: center">
-                        Oh no! It seems the page you're looking for doesn't exist (yet)...
+                        Oh no! It seems the page you're looking for (melbournecardiology.services<!--#echo var="REQUEST_URI" -->) doesn't exist (yet)...
+                    </p>
+                    <p class="textp1 center" style="text-align: center">
+                        Your browser &amp; IP:
+                    </p>
+                    <p class="textp1 center" style="text-align: center">
+                        <!--#echo var="HTTP_USER_AGENT" -->
+                    </p>
+                    <p class="textp1 center" style="text-align: center">
+                        <!--#echo var="REMOTE_ADDR" -->
                     </p>
                     <div class="" style="text-align: center">
                         <div id="button1">
