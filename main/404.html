@@ -638,40 +638,6 @@
             support = support ? 'mix-blend-mode' : 'no-mix-blend-mode';
             document.documentElement.className += support;
         }
-
-
-        /*MicroModal.init({
-            awaitCloseAnimation: true, // set to false, to remove close animation
-            onShow: function(modal) {
-                console.log("micromodal open");
-            },
-            onClose: function(modal) {
-                console.log("micromodal close");
-            }
-        });*/
-
-        document.addEventListener("DOMContentLoaded", function() {
-
-            try {
-
-                MicroModal.init({
-                    awaitCloseAnimation: true,
-                    onShow: function(modal) {
-                        console.log("micromodal open");
-                    },
-                    onClose: function(modal) {
-                        console.log("micromodal close");
-                    },
-                    disableScroll: true,
-                    disableFocus: true
-                });
-
-            } catch (e) {
-                console.log("micromodal error: ", e);
-            }
-
-        });
-
     </script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
