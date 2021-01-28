@@ -850,7 +850,7 @@
 
                                                 <div class="input-wrapper twin">
                                                     <input data-parsley-trigger="change" data-parsley-error-message="Medicare/DVA Expiry required." type="text" title="Patient's Medicare/DVA date of expiry" id="medidvaexp" value="" aria-required="true" required="" class="form__input" oninput="formatDate()">
-                                                    <input id="outputDate" type="date" name="patient dob" value="" style="display: none">
+                                                    <input id="outputDate1" type="date" name="patient dob" value="" style="display: none">
                                                     <label class="form__label reqstar" for="medidvaexp">Card Expiry (dd/mm/yyyy)
                                                         <svg class="form__valid" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="611.983px" height="611.983px" viewBox="0 0 611.983 611.983" style="enable-background:new 0 0 611.983 611.983;" xml:space="preserve">
                                                             <g>
@@ -1364,6 +1364,34 @@
 
             $("#date").change(function() {
                 $("#outputDate").val(reformattedDate);
+            });
+            /*$("#date").on('change', function () {
+    $("#outputDate").val(reformattedDate);
+});*/
+        }
+        
+        function formatDate1(userDate1) {
+
+            var userDate1 = document.getElementById('medidvaexp').value;
+            var rawDate_array1 = [],
+                newDate_array1 = [];
+            var month1, day1, year1, reformattedDate1;
+
+            for (i = 0; i < userDate1.length; i++) {
+                if (userDate1[i] != "/") {
+                    rawDate_array1.push(userDate1[i]);
+                }
+            }
+            month1 = rawDate_array1.slice(2, 4).join("");
+            day1 = rawDate_array1.slice(0, 2).join("");
+            year1 = rawDate_array1.slice(4, 8).join("");
+            newDate_array1.push(year1, month1, day1);
+            reformattedDate1 = newDate_array1.join("-");
+
+            /*document.getElementById("outputDate").innerHTML = reformattedDate;*/
+
+            $("#medidvaexp").change(function() {
+                $("#outputDate1").val(reformattedDate1);
             });
             /*$("#date").on('change', function () {
     $("#outputDate").val(reformattedDate);
