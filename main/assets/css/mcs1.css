@@ -1029,7 +1029,7 @@ a {
 }
 
 .boldbtn {
-    background: #D93D6E;
+    background: #5A50F5 /*#D93D6E*/;
     border-radius: 50px;
     color: white !important;
 }
