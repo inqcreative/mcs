@@ -23,25 +23,25 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/assets/img/favicon-144.png">
-	<meta name="msapplication-config" content="/assets/img/browserconfig.xml">
+    <meta name="msapplication-TileImage" content="/assets/img/favicon-144.png">
+    <meta name="msapplication-config" content="/assets/img/browserconfig.xml">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/icon.png">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/assets/img/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/assets/img/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/assets/img/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/assets/img/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
-	<link rel="apple-touch-icon" href="/assets/img/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/assets/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="196x196" href="/assets/img/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="160x160" href="/assets/img/favicon-160.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon-96.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="/assets/img/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16.png">
+    <link rel="apple-touch-icon" href="/assets/img/favicon-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon-144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon-60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon-120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon-76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png">
     <link rel="canonical" href="https://melbournecardiology.services">
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">-->
     <!--<link rel="stylesheet" href="bootstrap-4.1.2/dist/css/bootstrap.min.css">-->
@@ -347,7 +347,6 @@
     <link rel="stylesheet" href="assets/fonts/toriga.css">
     <link rel="stylesheet" href="assets/fonts/vic.css">
     <style>
-
         .ml12 .letter {
             display: inline-block;
             line-height: 1em;
@@ -446,7 +445,10 @@
         </div>
         <div class="scrollContent ha-waypoint" data-animate-down="ha-header-shrink" data-animate-up="ha-header-show" style="background-color: var(--color-bg)">
             <div id="mcshome">
-                <img src="assets/img/Layer0.png" style="width: 100vw; height: 100vh; z-index: -1; opacity: 0.25">
+                <img src="assets/img/Layer0.png" style="width: 100vw; height: 100vh; z-index: -1; opacity: 0.25;">
+                <div style="border: 2px solid yellow; width: 100%; height: 100%; position: absolute; top: 0; display: block; overflow: hidden">
+                    <img src="assets/img/logomark-final%20white.png" style="z-index: 1; opacity: 0.1; position: absolute; display: block; right: 0;  margin-right: -100px; width: 700px; overflow: hidden">
+                </div>
                 <div class="hometitle">
                     <span class="text">Melbourne Cardiology Services</span>
                     <br>
@@ -746,7 +748,6 @@
                 });
         });*/
 
-
     </script>
     <script>
         // Wrap every letter in a span
@@ -798,6 +799,7 @@
         var sc_invisible = 1;
         var sc_security = "e6d9f3cd";
         var sc_https = 1;
+
     </script>
     <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async>
     </script>
@@ -827,15 +829,18 @@
             // increase value up to 10, then refresh AOS
             scrollRef <= 5 ? scrollRef++ : AOS.refresh();
         });*/
+
     </script>
     <script>
         Splitting();
+
     </script>
     <script>
         ScrollOut({
             threshold: 0.1,
             once: false
         });
+
     </script>
     <div class="cursor"></div>
 </body>
