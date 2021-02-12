@@ -356,7 +356,7 @@ svg {
 }
 
 @supports (--css: variables) {
-    [data-theme="dark"] {
+    [data-theme="light"] {
         --color-primary-darker: hsl(228, 74%, 41%);
         --color-primary-darker-h: 228;
         --color-primary-darker-s: 74%;
