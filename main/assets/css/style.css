@@ -355,7 +355,7 @@ svg {
     color: var(--color-contrast-high);
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     @supports (--css: variables) {
         [data-theme="dark"] {
             --color-primary-darker: hsl(338, 83%, 43%);
@@ -509,9 +509,9 @@ svg {
             --color-contrast-purple: hsl(240, 8%, 12%);
         }
     }
-}
+}*/
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     [data-theme="dark"] {
         --color-primary-darker: hsl(338, 83%, 43%);
         --color-primary-darker-h: 338;
@@ -663,9 +663,9 @@ svg {
         --color-contrast-higher-l: 100%;
         --color-contrast-purple: hsl(240, 8%, 12%);
     }
-}
+}*/
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     --color-primary-darker: hsl(338, 83%, 43%);
     --color-primary-darker-h: 338;
     --color-primary-darker-s: 83%;
@@ -815,7 +815,7 @@ svg {
     --color-contrast-higher-s: 0%;
     --color-contrast-higher-l: 100%;
     --color-contrast-purple: hsl(240, 8%, 12%);
-}
+}*/
 
 @supports (--css: variables) {
     [data-theme="dark"] {
