@@ -8,7 +8,7 @@
     });
 
     function initTheme() {
-    	var darkThemeSelected = (localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'dark');
+    	var darkThemeSelected = (localStorage.getItem('themeSwitch') === null && localStorage.getItem('themeSwitch') !== 'dark');
     	// update checkbox
     	themeSwitch.checked = darkThemeSelected;
 			// update body data-theme attribute
