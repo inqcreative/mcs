@@ -1,7 +1,7 @@
 (function() {
 	// Theme switch
 	var themeSwitch = document.getElementById('themeSwitch');
-	/*if(themeSwitch) {
+	if(themeSwitch) {
 		initTheme(); // if user has already selected a specific theme -> apply it
 		themeSwitch.addEventListener('change', function(event){
     	resetTheme(); // update color theme
@@ -24,32 +24,7 @@
     		localStorage.removeItem('themeSwitch');
     	} 
     };
-	} */
-    if(themeSwitch) {
-		initTheme(); // if user has already selected a specific theme -> apply it
-		themeSwitch.addEventListener('change', function(event){
-    	resetTheme(); // update color theme
-    });
-
-    function initTheme() {
-    	var darkThemeSelected = (localStorage.getItem('themeSwitch') !== 'dark' && localStorage.getItem('themeSwitch') === null);
-    	// update checkbox
-    	themeSwitch.checked = darkThemeSelected;
-			// update body data-theme attribute
-			darkThemeSelected ? document.body.removeAttribute('data-theme') : document.body.setAttribute('data-theme', 'dark');
-    };
-
-    function resetTheme() {
-    	if(themeSwitch.checked) { // dark theme has been selected
-            document.body.removeAttribute('data-theme');
-    		localStorage.removeItem('themeSwitch');
-    		
-    	} else {
-    		document.body.setAttribute('data-theme', 'dark');
-    		localStorage.setItem('themeSwitch', 'dark');
-    	} 
-    };
-	}
+	} 
 	
 
 	// Main Header component JS
