@@ -8,17 +8,17 @@
     });
 
     function initTheme() {
-    	var darkThemeSelected = (localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'dark');
+    	var lightThemeSelected = (localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'light');
     	// update checkbox
-    	themeSwitch.checked = darkThemeSelected;
+    	themeSwitch.checked = lightThemeSelected;
 			// update body data-theme attribute
-			darkThemeSelected ? document.body.setAttribute('data-theme', 'dark') : document.body.removeAttribute('data-theme');
+			lightThemeSelected ? document.body.setAttribute('data-theme', 'light') : document.body.removeAttribute('data-theme');
     };
 
     function resetTheme() {
     	if(themeSwitch.checked) { // dark theme has been selected
-    		document.body.setAttribute('data-theme', 'dark');
-    		localStorage.setItem('themeSwitch', 'dark');
+    		document.body.setAttribute('data-theme', 'light');
+    		localStorage.setItem('themeSwitch', 'light');
     	} else {
     		document.body.removeAttribute('data-theme');
     		localStorage.removeItem('themeSwitch');
