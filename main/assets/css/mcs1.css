@@ -997,11 +997,18 @@ a {
     background: #5A50F5 !important;
 }
 
-.swooshcontainer {
+.swooshcontainer1,
+.swooshcontainer2 {
     position: relative;
 }
 
-.swooshcontainer > svg {
+.swooshcontainer1 > svg {
+    height: 1em;
+    top: calc(100% - .5em);
+    width: calc(100%);
+}
+
+.swooshcontainer2 > svg {
     height: 1em;
     top: calc(100% - .5em);
     width: calc(100%);
