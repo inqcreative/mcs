@@ -1010,8 +1010,14 @@ a {
 
 .swooshcontainer2 > svg {
     height: 1em;
-    top: calc(100% - .5em);
-    width: calc(100%);
+    top: calc(20%);
+    width: calc(350px);
+}
+
+@media screen and (max-width: 1023px) {
+    .swooshcontainer2 > svg {
+        width: 200px;
+    }
 }
 
 [data-scroll] {
