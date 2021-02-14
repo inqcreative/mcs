@@ -1005,7 +1005,7 @@ a {
 .swooshcontainer1 > svg {
     height: 1em;
     top: calc(100% - .5em);
-    width: calc(100%);
+    width: calc(350px);
 }
 
 .swooshcontainer2 > svg {
@@ -1015,6 +1015,9 @@ a {
 }
 
 @media screen and (max-width: 1023px) {
+    .swooshcontainer1 > svg {
+        width: 200px;
+    }
     .swooshcontainer2 > svg {
         width: 200px;
     }
