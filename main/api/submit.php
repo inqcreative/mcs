@@ -461,7 +461,7 @@ function handle_transfer_ids_post($ids) {
     <link rel="stylesheet" href="../assets/css/mcs.css">
     <link rel="stylesheet" href="../assets/css/mcs1.css">
     <link rel="stylesheet" href="../assets/css/cursor.css">
-    <link rel="stylesheet" href="../assets/css/micromodal.css">-
+    <link rel="stylesheet" href="../assets/css/micromodal.css">
     <link rel="stylesheet" href="../assets/fonts/medel.css">
     <link rel="stylesheet" href="../assets/fonts/montserrat.css">
     <link rel="stylesheet" href="../assets/fonts/toriga.css">
