@@ -1015,10 +1015,8 @@ a {
 }
 
 @media screen and (max-width: 1023px) {
-    .swooshcontainer1 > svg {
-        width: 200px;
-    }
-    .swooshcontainer2 > svg {
+    .swooshcontainer1 > svg,
+    .swooshcontainer2 > svg{
         width: 200px;
     }
 }
