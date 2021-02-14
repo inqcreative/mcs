@@ -965,7 +965,9 @@ a {
 
 .heropurple {
     height: 400px;
-    background-color: var(--color-bg) /*#5A50F5*/;
+    background-color: var(--color-bg)
+        /*#5A50F5*/
+    ;
     /*#8737FF*/
     /*#9400FF*/
     ;
@@ -982,14 +984,27 @@ a {
     z-index: 0;
     opacity: 0.35;
     background-image: url(../img/Layer0.png);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 }
 
 .purple-bg {
     background-color: #5A50F5 !important;
     background: #5A50F5 !important;
+}
+
+.swooshcontainer {
+    position: relative;
+}
+
+.swooshcontainer > svg {
+    height: 1em;
+    top: calc(100% - .5em);
+    width: calc(100%);
 }
 
 [data-scroll] {
