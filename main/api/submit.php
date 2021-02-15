@@ -590,9 +590,14 @@ function handle_transfer_ids_post($ids) {
         </div>
         <div class="scrollContent ha-waypoint" data-animate-down="ha-header-shrink" data-animate-up="ha-header-show" style="background-color: var(--color-bg)">
             <div class="heropurple">
-                <!--<img src="assets/img/Layer0.png" style="width: 100vw; height: 100%; z-index: -1; opacity: 0.25">-->
-                <div class="col-12">
-                    <h1 class="textb white herotitle" style="text-align: center; padding-top: 200px">Thank You</h1>
+                <div style="width: 100%; height: 100%; position: relative; display: block; overflow: hidden">
+                    <img src="../assets/img/logomark-final%20white.png" style="z-index: 1; opacity: 0.25; position: absolute; display: block; top: 50px; right: -100px; width: 500px; overflow: hidden">
+                    <div class="col-12" style="align-content: center; align-items: center; text-align: center; z-index: 3">
+                        <h1 class="textb herotitle" style="text-align: center; padding-top: 200px; z-index: 3">Thank You</h1>
+                        <div class="swooshcontainer2" style="z-index: 3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 357.809 13.618"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path d="M1.5,12.118c51.342-3.748,102.805-7.5,154.252-5.677C222.94,8.817,255,12.639,356.309,1.5" fill="none" stroke="var(--color-contrast-higher)" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></g></g></svg>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="container-fluid feature row" style="margin-left: 0 !important; margin-right: 0 !important; padding-left: 0 !important; padding-right: 0 !important;">
