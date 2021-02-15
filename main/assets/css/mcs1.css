@@ -1089,7 +1089,8 @@ a {
 }
 
 .boldbtn:hover {
-    opacity: 0.8;
+    /*opacity: 0.8;*/
+    background: #D93D6E /*#4949C6*/;
     color: white;
     font-family: 'vicsemibold', sans-serif;
 }
