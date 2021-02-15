@@ -481,7 +481,7 @@ function handle_transfer_ids_post($ids) {
             color: black !important;
         }
 
-        .herotitle:after {
+        /*.herotitle:after {
             background-image: url("../assets/img/swoosh-white2.svg");
             background-repeat: no-repeat;
             background-size: 100% 100%;
@@ -492,7 +492,7 @@ function handle_transfer_ids_post($ids) {
             position: absolute;
             top: calc(100% - .15em);
             width: calc(100% + .4em);
-        }
+        }*/
 
         #map {
             position: absolute;
@@ -526,32 +526,32 @@ function handle_transfer_ids_post($ids) {
             </div>
         </div>
         <div id="ha-header">
-            <nav class="menu ha-header ha-header-shrink purple-bg">
+            <nav class="menu ha-header ha-header-shrink">
                 <ol class="dtmenu text">
-                    <li class="menu-item"><a href="../"><img src="../assets/img/logomark-final%20white.png" style="max-height: 40px; width: auto"></a></li>
-                    <li class="menu-item dtmenuitem"><a href="../about" class="white">About</a></li>
+                    <li class="menu-item"><a href="../"><img src="../assets/img/icon.png" style="max-height: 40px; width: auto"></a></li>
+                    <li class="menu-item dtmenuitem"><a href="../about" class="">About</a></li>
                     <li class="menu-item dtmenuitem">
-                        <a href="../services/" class="white">Services</a>
+                        <a href="../services/" class="">Services</a>
                         <ol class="sub-menu">
-                            <li class="menu-item purple"><a href="echo">Echocardiography</a></li>
-                            <li class="menu-item purple"><a href="stressecho">Stress Echocardiography</a></li>
-                            <li class="menu-item purple"><a href="holter">Holter Monitoring</a></li>
+                            <li class="menu-item"><a href="echo">Echocardiography</a></li>
+                            <li class="menu-item"><a href="stressecho">Stress Echocardiography</a></li>
+                            <li class="menu-item"><a href="holter">Holter Monitoring</a></li>
                         </ol>
                     </li>
                     <li class="menu-item dtmenuitem">
-                        <a href="../locations/" class="dtmenuheader white">Locations</a>
+                        <a href="../locations/" class="dtmenuheader">Locations</a>
                         <ol class="sub-menu">
-                            <li class="menu-item purple"><a href="../locations/nmelb">North Melbourne</a></li>
-                            <li class="menu-item purple"><a href="../locations/epworth">Epworth Richmond</a></li>
-                            <li class="menu-item purple"><a href="../locations/mponds">Moonee Ponds</a></li>
+                            <li class="menu-item"><a href="../locations/nmelb">North Melbourne</a></li>
+                            <li class="menu-item"><a href="../locations/epworth">Epworth Richmond</a></li>
+                            <li class="menu-item"><a href="../locations/mponds">Moonee Ponds</a></li>
                         </ol>
                     </li>
                     <li class="menu-item dtmenuitem">
-                        <a href="../patients" class="dtmenuheader white">Patients</a>
+                        <a href="../patients" class="dtmenuheader">Patients</a>
                         <ol class="sub-menu">
-                            <li class="menu-item purple"><a href="../book">Request Appointment</a></li>
-                            <li class="menu-item purple"><a href="../contact">General Enquiries</a></li>
-                            <li class="menu-item purple"><a href="../feedback">Feedback</a></li>
+                            <li class="menu-item"><a href="../book">Request Appointment</a></li>
+                            <li class="menu-item"><a href="../contact">General Enquiries</a></li>
+                            <li class="menu-item"><a href="../feedback">Feedback</a></li>
                         </ol>
                     </li>
                     <li class="menu-item dtmenuitem"><a href="../refer" class="boldbtn">Refer a Patient</a></li>
@@ -566,16 +566,16 @@ function handle_transfer_ids_post($ids) {
                     </li>-->
                 </ol>
             </nav>
-            <nav class="mobmenu purple">
-                <a href="../"><img src="../assets/img/logomark-final%20white.png" style="max-height: 30px; width: auto; margin: 16px 0 0 20px"></a>
-                <div class="button_container purple" id="toggle" data-target="#overlay" aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
+            <nav class="mobmenu">
+                <a href="../"><img src="../assets/img/icon.png" style="max-height: 30px; width: auto; margin: 16px 0 0 20px"></a>
+                <div class="button_container" id="toggle" data-target="#overlay" aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="top"></span>
                     <span class="middle"></span>
                     <span class="bottom"></span>
                 </div>
             </nav>
 
-            <div class="overlay purple" id="overlay">
+            <div class="overlay" id="overlay">
                 <nav class="overlay-menu">
                     <ul>
                         <li><a href="../">Home</a></li>
