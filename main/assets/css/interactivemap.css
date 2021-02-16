@@ -72,7 +72,7 @@ a:hover {
 
 .listings .item .title {
     display: block;
-    color: #8737FF;
+    color: #D93D6E  /*#8737FF*/;
     font-weight: 700;
 }
 
