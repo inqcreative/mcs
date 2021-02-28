@@ -544,6 +544,7 @@ function handle_transfer_ids_post($ids) {
                             <li class="menu-item"><a href="../locations/nmelb">North Melbourne</a></li>
                             <li class="menu-item"><a href="../locations/epworth">Epworth Richmond</a></li>
                             <li class="menu-item"><a href="../locations/mponds">Moonee Ponds</a></li>
+                            <li class="menu-item"><a href="../locations/blackburnsouth">Blackburn South</a></li>
                         </ol>
                     </li>
                     <li class="menu-item dtmenuitem">
