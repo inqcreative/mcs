@@ -213,11 +213,11 @@
                                     </div>
                                 </div>
                                 <div class="modal__content px-sm-5">
-                                    <form method="post" action="https://melbournecardiology.services/api/submit.php" role="form" enctype="multipart/form-data" class="form" id="form">
+                                    <form action="https://melbournecardiology.services/api/submit.php" method="post" enctype="multipart/form-data">
                                         <fieldset>
                                             <legend class="textp textc">Upload Your Referral Form</legend>
                                         </fieldset>
-                                        <input type="file" class="filepond" name="attachments" data-allow-reorder="true" data-max-file-size="30MB" data-max-files="5" multiple>
+                                        <input type="file" name="filepond[]" data-allow-reorder="true" data-max-file-size="30MB" data-max-files="5" multiple>
                                         <button type="submit" class="boldbtn mt-5 py-3" style="border: none; width: 100%">Submit</button>
                                     </form>
                                 </div>
