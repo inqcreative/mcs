@@ -60,7 +60,7 @@
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
-    "@commitlint/cli": "^8.2.0",
+    "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^8.2.0",
     "cpy-cli": "^2.0.0",
     "create-banner": "^1.0.0",
